@@ -1,0 +1,14 @@
+mvi D,8EH
+mvi E,0F7H
+mvi b, 0FH
+mov a,d
+ana b
+mov d,a
+mov a,e
+ana b
+mov e,a
+mov a,d
+xra e ; accumulator contains the xor of the both number (LSB)
+;at port 1
+out 01H
+hlt

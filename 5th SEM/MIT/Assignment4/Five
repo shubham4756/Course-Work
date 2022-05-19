@@ -1,0 +1,3 @@
+mvi a,0A5H
+ani 0F0H ;mask lsb and accumulator contains result
+hlt

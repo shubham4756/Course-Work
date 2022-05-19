@@ -1,0 +1,31 @@
+; fibonacci series store
+ 
+lxi h,4000H
+mvi c,04H ;Counter how many we need
+call fibonacci ;store address by h onwards
+
+lxi h,4007h
+mvi c,07H
+call fibonacci
+hlt
+
+fibonacci: mov e,c
+	   mvi b,00H     ;base case 0th element
+	   mvi d,01H     ;base case 1st element
+	   mov m,b
+	   inx h
+	   mov m ,d
+	   dcr e
+     loop: call nextterm
+	   dcr e
+	   jnz loop
+	   ret
+
+;Calculate next item
+nextterm: mov a,b
+	  add d
+	  mov b,d
+	  mov d,a
+	  inx h
+	  mov m,a
+	  ret

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Fifth</title>
+</head>
+<body>
+    <input type="checkbox" id="news">
+    <label >Do you want to Subscribe SVNIT newsletters?</label> <br><br>
+    <div style="visibility: hidden;" id="options"> 
+        
+        <input type="checkbox" name="availOption" value="Anual Fest" checked><label>Anual Fest</label><br>
+        <input type="checkbox" name="availOption" value="Drishti Events" checked><label>Drishti Events</label><br>
+        <input type="checkbox" name="availOption" value="Student Chapter" checked><label>Student Chapter</label><br>
+        <input type="checkbox" name="availOption" value="STTP" checked><label>STTP</label><br>
+        <input type="checkbox" name="availOption" value="Summer School" checked><label>Summer School</label><br>
+        <input type="checkbox" name="availOption" value="Talks" checked><label>Talks</label><br>
+        <input type="checkbox" name="availOption" value="Conferences" checked><label>Conferences</label><br>
+        <input type="checkbox" name="availOption" value="Workshops" checked><label>Workshop</label><br>
+        <input type="checkbox" name="availOption" value="Courses through NPTEL" checked><label>Courses through NPTEL</label><br>
+        <button type="submit" id="subscribe">Subscribe</button>
+
+    </div>
+
+</body>
+<script>
+    var check = document.getElementById("news");
+    check.addEventListener("click",()=> {
+        if(check.checked)
+            document.getElementById("options").style.visibility="visible";
+        else 
+            document.getElementById("options").style.visibility="hidden";
+    });
+
+    var done=document.getElementById("subscribe");
+    done.addEventListener("click",()=> {
+        var str = '';
+        var choices = document.getElementsByName('availOption');
+        for(var i = 0;i<choices.length;i++) {
+            if(choices[i].checked) {
+                if(str == '') {
+                    str = "<ul>"
+                }
+                str = str.concat("<li>" + choices[i].value + "</li>");
+            }
+        }
+        if(str.length>0) {
+            str = str.concat("</ul>")
+            str = "You have Subscribed NewsLetter for <br>" + str;
+        } else {
+            str = "You have not subscribed any newsletter !!!"
+        }
+        var winPrint = window.open('', '', 'left=300,top=100,width=800,height=600');
+        winPrint.document.write('<title>Subscribed NewsLetters</title> <p> ' + str + '</p>');
+    });
+</script>
+</html>

@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    ll n,k;
+    cin>>n>>k;
+    ll Mn=32;
+    ll cnt[Mn]={0};
+    for(ll i=0;i<n;i++) {
+        ll x; cin>>x;
+        for(ll j=0;j<Mn;j++) {
+            if((x&(1LL<<j)))
+                cnt[j]++;
+        }
+    }
+    ll tp=0;
+    for(ll i=0;i<Mn;i++) {
+        tp+=cnt[i];
+    }
+    if(tp==0) {
+        cout<<"-1\n"; return ;
+    }
+    ll mx=LLONG_MIN,res=0;
+    for(ll i=0;i<(1LL<<Mn);i++) {
+        ll pt=0;
+        for(ll j=0;j<Mn;j++) {
+            if((i&(1LL<<j)))
+                pt++;
+        }
+        if(pt!=k)
+            continue;
+        ll val=0;
+        for(ll j=0;j<Mn;j++) {
+            if((i&(1LL<<j)))
+                val+= cnt[j] * (1LL<<j);
+        }
+        if(val>mx) {
+            mx=val;
+            res=1;
+        } else if(val==mx) {
+            res++;
+        }
+    }
+    cout<<res<<endl;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    long int t=1;
+    cin>>t;                     // DON'T FORGET IT. ^^^ 
+    for(long int tt=1;tt<=t;tt++){
+        solve();
+    }
+    cerr << "Time : " << 1000 * ((double) clock()) / (double) CLOCKS_PER_SEC << "ms\n";
+    return 0;
+}

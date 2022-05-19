@@ -1,0 +1,34 @@
+digraph p_Philosopher {
+size="8,10";
+  GT [shape=box,style=dotted,label="Philosopher"];
+  GT -> S1;
+	S1 -> S8  [color=black,style=solid,label="printf('Plilosopher with id %d is thinking ',id)"];
+	S8 -> S3  [color=black,style=dashed,label="((fork[id]==0))"];
+	S8 -> S6  [color=black,style=dashed,label="((fork[((id+1)%4)]==0))"];
+	S3 -> S20  [color=black,style=bold,label="fork[id] = (id+1)"];
+	S20 -> S11  [color=black,style=dashed,label="((fork[id]==(id+1)))"];
+	S20 -> S16  [color=black,style=dashed,label="((fork[id]==0))"];
+	S11 -> S12  [color=black,style=dashed,label="((fork[((id+1)%4)]==0))"];
+	S12 -> S13  [color=black,style=dashed,label="fork[((id+1)%4)] = (id+1)"];
+	S13 -> S22  [color=black,style=bold,label="nr_eat = (nr_eat+1)"];
+	S22 -> S26  [color=black,style=solid,label="printf('Plilosopher with id %d is eating ',id)"];
+	S26 -> S1  [color=black,style=dotted,label="D_STEP27"];
+	S16 -> S17  [color=black,style=dashed,label="((fork[((id+1)%4)]==(id+1)))"];
+	S17 -> S18  [color=black,style=dashed,label="fork[id] = (id+1)"];
+	S18 -> S22  [color=black,style=bold,label="nr_eat = (nr_eat+1)"];
+	S6 -> S20  [color=black,style=bold,label="fork[((id+1)%4)] = (id+1)"];
+}
+digraph init {
+size="8,10";
+  GT [shape=box,style=dotted,label="init"];
+  GT -> S10;
+	S10 -> S7  [color=black,style=dashed,label="i = 0"];
+	S7 -> S3  [color=black,style=dashed,label="((i<4))"];
+	S7 -> S6  [color=black,style=dashed,label="else"];
+	S3 -> S4  [color=black,style=dashed,label="(run Philosopher(i))"];
+	S4 -> S7  [color=black,style=dashed,label="i = (i+1)"];
+	S6 -> S9  [color=black,style=dashed,label="goto :b0"];
+	S9 -> S11  [color=black,style=solid,label="break"];
+	S11 -> S0  [color=black,style=solid,label="-end-"];
+  S11 [color=blue,style=bold,shape=box];
+}

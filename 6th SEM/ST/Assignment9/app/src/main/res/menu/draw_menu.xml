@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contactEntry"
+            android:icon="@drawable/add"
+            android:title="Contact Entry" />
+
+        <item
+            android:id="@+id/viewEntries"
+            android:icon="@drawable/view"
+            android:title="View Contact" />
+
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search"
+            android:title="Search User" />
+
+        <item
+            android:id="@+id/updateEntry"
+            android:icon="@drawable/update"
+            android:title="Update User" />
+
+        <item
+            android:id="@+id/deleteEntry"
+            android:icon="@drawable/delete"
+            android:title="Delete User" />
+
+        <item
+            android:id="@+id/viewAllMessages"
+            android:icon="@drawable/view"
+            android:title="View Messages" />
+
+        <item
+            android:id="@+id/viewRecentMessages"
+            android:icon="@drawable/view"
+            android:title="View Recent Messages" />
+
+        <item
+            android:id="@+id/addMessageMenu"
+            android:icon="@drawable/search"
+            android:title="Add Message" />
+
+        <item
+            android:id="@+id/updateMessageMenu"
+            android:icon="@drawable/update"
+            android:title="Update Message" />
+
+        <item
+            android:id="@+id/deleteMessageMenu"
+            android:icon="@drawable/delete"
+            android:title="Delete Message" />
+    </group>
+</menu>

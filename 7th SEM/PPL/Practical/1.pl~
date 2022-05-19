@@ -1,0 +1,26 @@
+patient(p21, shubham, address(shlimar_park, delhi, 395001), [sub(d1, flu), sub(d2,commoncold)] ).
+patient(p22, darshan, address(jbnagar, delhi, 395004), [sub(d2, commoncold), sub(d3,chickenpox)] ).
+patient(p23, sagar, address(svnit, surat, 395007), [sub(d1, chickenpox), sub(d4,measles)] ).
+
+% flattens list of lists into lists
+flatten([],[]).
+flatten([H|T],W):-flatten(T,W1), append(W1,H,W).
+
+% remove duplicates from List1 and form List2
+remove_duplicates([],[]).
+remove_duplicates([H|T], [H|T2]):- not(member(H,T)), remove_duplicates(T,T2).
+remove_duplicates([H|T], L2):- member(H,T), remove_duplicates(T,L2).
+
+%q1
+total_diseases:-patient(_,X,_,Y), length(Y,L), write(X), write(": "), write(L).
+
+%q2
+cityaddress:- patient(_,Name,address(_, _, Code),_), write("("), write(Name), write(", "), write(City), write(")"), nl.
+
+%q5
+%all students learning hindi subject
+contains_cold([]):-fail.
+contains_cold([sub(_,commoncold)|_]):-!.
+contains_cold([_|T]):-contains_cold(T).
+
+common_cold_patient:-patient(id,_,_,X), contains_cold(X), write(id), nl.

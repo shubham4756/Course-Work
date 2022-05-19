@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UpdateMessageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUserId"
+            android:hint="Enter User Id"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:visibility="visible"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:id="@+id/etMessageId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="Enter message id"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etMessageRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="Enter message"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:id="@+id/updateMessage"/>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+MVI C,91H
+MOV A,C
+rrc
+rrc
+rrc
+rrc
+MOV C,A
+HLT

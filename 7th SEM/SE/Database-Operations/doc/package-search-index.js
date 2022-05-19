@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.database.operations"},{"l":"com.database.operations.batch"},{"l":"com.database.operations.config"},{"l":"com.database.operations.model"},{"l":"com.database.operations.service"}]

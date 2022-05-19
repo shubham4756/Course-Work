@@ -1,0 +1,14 @@
+MVI A,1DH
+mov L,A
+MVI A,14H
+mov H,A
+SHLD 2000H
+LHLD 2000H ;load into HL Pair
+MOV A, L ;Load L into accumulator
+CMA ;Complement
+MOV L, A ;store in L
+MOV A, H ;Load H into accumulator
+CMA ;Complement
+MOV H, A ;store in H
+SHLD 2002H ;Store the 1's complemented result
+HLT

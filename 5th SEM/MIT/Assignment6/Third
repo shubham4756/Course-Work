@@ -1,0 +1,26 @@
+lxi h,2000h
+mov b,m        ;get data
+inx h
+mov c,m       ; get data
+call multiply ; calling first time
+
+inx h
+mov m,a ;storing result
+
+inx h
+mov b,m
+
+inx h
+mov c,m
+call multiply ;calling second time
+inx h
+mov m,a
+hlt
+
+multiply: mvi a,00H ;clear accumulator
+	  mov d,c
+	  ;add b d times
+	  loop: add b
+          dcr d
+          jnz loop
+	  ret

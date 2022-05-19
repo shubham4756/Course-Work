@@ -1,0 +1,8 @@
+MVI C,5H
+MVI E,7H
+MVI A,00
+loop: ADD C
+DCR E
+JNZ loop
+MOV C,A
+HLT

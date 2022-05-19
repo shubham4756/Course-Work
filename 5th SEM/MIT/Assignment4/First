@@ -1,0 +1,7 @@
+mvi c ,0A8H
+mov a,c
+; for the last 4 bit do and with 0FH
+mvi b,00FH
+ana b
+out 01H
+hlt

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <script>
+            function validate() {
+                var first_name = document.forms['form']['first_name'].value.trim();
+                var middle_name = document.forms['form']['middle_name'].value.trim();
+                var last_name = document.forms['form']['last_name'].value.trim();
+                var phone_number = document.forms['form']['phone_number'].value.trim();
+                var email = document.forms['form']['email'].value.trim();
+                var password = document.forms['form']['password'].value.trim();
+                var re_password = document.forms['form']['re_password'].value.trim();
+                var date_of_birth = document.forms['form']['date_of_birth'].value.trim();
+                var error = '';
+                if(first_name == null || first_name == '') {
+                    error = error.concat("Please Enter First Name\n");
+                }                
+                if(middle_name == null || middle_name == '') {
+                    error = error.concat("Please Enter Middle Name\n");
+                }
+                if(last_name == null || last_name == '') {
+                    error = error.concat("Please Enter Last Name\n");
+                }
+                var phoneno = /^\d{10}$/;
+                if(phone_number == null || phone_number == '') {
+                    error = error.concat("Please Enter Phone Number\n");
+                } else {
+                    if(!phone_number.match(phoneno)) {
+                        error = error.concat("Please Enter Valid Phone Number\n");
+                    }
+                }
+                var emailId= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if(email == null || email == '') {
+                    error = error.concat("Please Enter email ID\n");
+                } else {
+                    if(!email.match(emailId)) {
+                        error = error.concat("Please Enter Valid Email ID\n");
+                    }
+                }
+                if(date_of_birth == null || date_of_birth == '') {
+                    error = error.concat("Please  Enter Date Of Birth \n");
+                }
+                if(password !== null && password !== '' && re_password !== null && re_password !== '') {
+                    if(password !== re_password) {
+                        error = error.concat("Password Confirmation Failed!! \n");
+                    }
+                } else {
+                    error = error.concat("Either Password or Re-Password is/are Empty!! \n");
+                }
+
+                date_of_birth = new Date(date_of_birth);
+                var q = new Date();
+                var m = q.getMonth();
+                var d = q.getDate();
+                var y = q.getFullYear();
+                var diff = y - date_of_birth.getFullYear();
+                if(diff >= 100) {
+                    error = error.concat("Greater than 100 years!! Enter Valid date \n");
+                }
+                var today = new Date(y,m,d);
+                m = date_of_birth.getMonth();
+                d = date_of_birth.getDate();
+                y = date_of_birth.getFullYear();
+                date_of_birth = new Date(date_of_birth);
+                if(today < date_of_birth){
+                    error = error.concat("Invallid Date!! Date should be earlier than today's date \n");
+                }
+                if(error !== '') {
+                    alert(error);
+                    return false;
+                }
+                alert("Your Account is Created !!");
+                return true;
+            }
+        </script>
+        <title>Second</title>
+        <style>
+            label {
+                font-style: italic;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: black; text-align:center; margin-top: 20px; font-style: italic">Sign Up</h1>
+        <form method="POST" name="form" style="width: 500px; margin: auto; margin-top: 20px" onsubmit="return validate()">
+            <label >First Name</label> 
+            <input type="text" name = "first_name"/>
+            <br><br>
+            <label >Middle Name</label> 
+            <input type="text" name = "middle_name"/>
+            <br><br>
+            <label >Last Name</label> 
+            <input type="text" name = "last_name"/>
+            <br><br>
+            <label >Date of Birth</label>
+            <input type="date" name="date_of_birth"/>
+            <br><br>
+            <label >Phone Number</label>
+            <input type="text" name="phone_number"/>
+            <br><br>
+            <label>Email </label>
+            <input type="email" name = "email"/>
+            <br><br>
+            <label>Password</label>
+            <input type="password" name="password"/>
+            <br><br>
+            <label>Re-Type Password</label>
+            <input type="password" name="re_password"/>
+            <br><br>
+            <button type="submit" name="sign_up" class="btn btn-primary">Create Account</button>
+        </form>
+    </body>
+</html>

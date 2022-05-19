@@ -1,0 +1,4 @@
+cryptography refers to secure information and communication
+techniques derived from mathematical concepts and a set of
+rule-based calculations called algorithms to transform messages in ways that are
+hard to decipher

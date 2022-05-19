@@ -1,0 +1,1 @@
+ls -l | awk '$5 >= 1000 {print $9,$5}' | sort -k 2 -nr| tee >(wc -l)

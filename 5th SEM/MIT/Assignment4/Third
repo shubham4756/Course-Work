@@ -1,0 +1,10 @@
+mvi b,91H
+mvi c,87H
+mvi d,01H
+mov a,b
+ana d
+mov b,a ; register b contain the answer
+mov a,c
+ana d
+mov c,a ; register c contain the answer
+hlt

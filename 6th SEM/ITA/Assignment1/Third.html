@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Third</title>
+        <script>
+            var p = parseFloat( prompt("Please Enter Principal Amount ", "0") );
+            var r = parseFloat( prompt("Please Enter Rate of Interest ", "0") );
+            var t = parseFloat( prompt("Please Enter Time period ", "0") );
+            var res= (p*t*r)/100;
+            var winPrint = window.open('', '', 'left=0,top=0,width=800,height=600,toolbar=0,scrollbars=0,status=0');
+            winPrint.document.write('<title>Simple Interest</title> <p> Simple Interest = ' + res + '</p>');
+        </script>
+    </head>
+</html>

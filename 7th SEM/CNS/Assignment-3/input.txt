@@ -1,0 +1,3 @@
+the playfair cipher or playfair square or wheatstone-playfair
+cipher is a manual symmetric encryption!
+technique and was the first literal digram substitution cipher.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE emails SYSTEM "q1.dtd">
+<emails>
+ -->
+<emails  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="q1.xsd">
+    <email>
+        <to>Vimal</to>
+        <from>Sonoo</from>
+        <heading>Hello</heading>
+        <body>Hello brother, how are you!</body>
+    </email>
+    <email>
+        <to>Peter</to>
+        <from>Jack</from>
+        <heading>Birth day wish</heading>
+        <body>Happy birth day Tom!</body>
+    </email>
+</emails>

@@ -1,0 +1,12 @@
+;let's store data in register B
+mvi b, 4Ch ;data on we want ro check
+mvi c,00H ;contains ans how many one's till
+mvi d,08H ;store how many bits we want to check
+mov a,b ;transfer in to accumulator
+loop: rar ;rotate right with carry
+jnc next ; if carry 0 then jump
+inr c ; if carry 1 then increment ans
+next: dcr d ; decrement ans by 1
+jnz loop ; do loop till counter is zero
+mov a,c ; store ans in to the accumulator
+hlt

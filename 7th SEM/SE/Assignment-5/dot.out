@@ -1,0 +1,14 @@
+digraph init {
+size="8,10";
+  GT [shape=box,style=dotted,label="init"];
+  GT -> S10;
+	S10 -> S7  [color=black,style=dashed,label="i = 0"];
+	S7 -> S3  [color=black,style=dashed,label="((i<4))"];
+	S7 -> S6  [color=black,style=dashed,label="else"];
+	S3 -> S4  [color=black,style=dashed,label="(run Philosopher(i))"];
+	S4 -> S7  [color=black,style=dashed,label="i = (i+1)"];
+	S6 -> S9  [color=black,style=dashed,label="goto :b0"];
+	S9 -> S11  [color=black,style=solid,label="break"];
+	S11 -> S0  [color=black,style=solid,label="-end-"];
+  S11 [color=blue,style=bold,shape=box];
+}

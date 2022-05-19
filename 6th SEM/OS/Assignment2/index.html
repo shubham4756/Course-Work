@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon"  type="image/png" href="images/logo.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SVNIT, Surat</title>
+
+  <!-- CSS  -->
+   <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.googleapis.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/newsTick.css">
+ <!--  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" /> -->
+
+  <style>
+    .mySlides {display:none;}
+  </style>
+  <script src="../js/use.fontawsome.js"></script>
+  <style type="text/css">
+
+    .crdtop{
+      height: 150px;
+      width:190px;
+        cursor: pointer;
+    }
+
+    .crdbottom{
+        height: 40px;
+        width:190px;
+    }
+
+    .dropdown-content {
+      overflow: visible !important;
+      min-width: 150px;
+    }
+
+    .dropdown-content .dropdown-content {
+      margin-top: 0;
+        margin-left: 100% !important;
+
+      
+    }
+
+    .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+      width: auto !important;
+      height: auto !important;
+      border-color: #474747;
+      background-color: #474747;
+      background-image: none;
+      filter: none;
+    }
+
+    .slider h3,.slider h5 {
+    /*text-rendering: optimizeLegibility;*/
+      transform: translate3d(0,0,0);
+    }
+
+    ul.sizing li{
+        min-height: 10px;
+    }
+    ul.sizing li a{
+      line-height: 10px;
+    }
+    .responsive {
+  		width: 100%;
+  		height: auto;
+	}
+
+
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(images/Preloader_3.gif) center no-repeat #fff;
+    }
+    #ticker_container{ margin-top:6px; }
+    #newscontent { margin-right: 10px; float: left; }
+    #news { display: none; }
+    #controls { float: right; height: 5px; }
+    #news { display: none;}
+    .news_tricker{ width:80%; }
+    .mySlides { display:none; }
+    .bold { font-weight: bold; }
+    .right { float: right; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="se-pre-con"></div>
+  <div id="modalsearch" class="modal bottom-sheet">
+    <div class="modal-content">
+      <script>
+      (function() {
+        var cx = '000464212614805462193:1r7sx1al0gk';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+
+  <ul id="in_report" class="dropdown-content black-text bold">
+    <li><a href="web/annualreport.php">Annual Report</a></li>
+    <li><a href="web/accountreport.php">Annual Account Report</a></li>
+    <li><a href="qlinks/acr_ug.pdf">Accrediation Report: UG</a></li>
+    <li><a href="qlinks/acr_pg.pdf">Accrediation Report: PG</a></li>
+    <li><a href="qlinks/Accreditation Report (2020) - Civil Engg & MechEngg.pdf">Accreditation report - CED & MED</a></li>
+  </ul>
+
+  <ul id="in_student_admission" class="dropdown-content black-text bold">
+    <li><a href="web/admission.php?tag=dasa">DASA</a></li>
+    <li><a href="web/admission.php?tag=ug">B.Tech. &nbsp; M.Sc.</a></li>
+    <li><a href="web/admission.php?tag=mtech">M.Tech.</a></li>
+    <li><a href="web/admission.php?tag=phd">Ph. D.</a></li>
+    <li><a href="web/qip.php">QIP</a></li>
+  </ul>
+
+    <ul id="in_fees" class="dropdown-content black-text bold">
+    <li><a href="https://mis.svnit.ac.in/mispay/" target="_blank">Payment & Registration</a></li>
+    <li><a href="Data/fees/OnlineFeePayment_RegistrationGuideline16-07-2016.pdf">Guidelines</a></li> 
+    <!-- <li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm">Hostel fee payment</a></li>
+    <li><a href="Data/fees/Fee_structure_2017-18.pdf">Hostel fee structure</a></li> -->
+  </ul>
+<ul id="in_NIT-acts" class="dropdown-content black-text bold">
+    <li><a href="web/forms/NIT_STATUTES_final.pdf" target="_blank">NIT Statutes (NITs)</a></li>
+    <li><a href="web/forms/act.pdf">NIT ACT</a></li> 
+  </ul>
+  <ul id="in_nirf_ranking" class="dropdown-content black-text bold">
+    <li><a href="qlinks/NIRF RANKING 2017.pdf">NIRF Ranking 2017</a></li>
+    <li><a href="qlinks/NIRF RANKING 2018.pdf">NIRF Ranking 2018</a></li>
+    <li><a href="qlinks/NIRF RANKING 2019.pdf">NIRF Ranking 2019</a></li>
+  </ul>
+  <ul id="in_nirf" class="dropdown-content black-text bold">
+    <li><a href="web/nirf.php">NIRF 2017</a></li>
+    <li><a href="web/nirf/2018/Final_Submitted_NIRF_Report_2018.pdf">NIRF 2018</a></li>
+    <li><a href="web/nirf/2019/FinalSubmittedDataNIRF 2019-07-Dec-2018.pdf">NIRF 2019</a></li>
+    <li><a href="web/nirf/2020/Sardar Vallabhbhai National  Institute of Technology20200106.pdf">NIRF 2020</a></li>
+  </ul>
+
+  <ul id="aboutus" class="dropdown-content black-text bold">
+   <li><a href="web/brief_writeup.php">Brief Write - Up</a></li>
+    <li><a href="web/director.php">Director's Message</a></li>
+    <li><a href="web/deputy_director.php">Deputy Director</a></li>
+    <li><a href="web/registrar.php">Brief about Registrar</a></li>
+    <li><a href="web/puc.php">Board of Governors</a></li>
+    <li><a href="Data/Notice/aboutus/senatemembers.pdf">Senate Members</a></li>
+    <li><a href="http://www.nitcouncil.org.in" target="_blank">Council of NITs</a></li>
+    <li><a href="web/officers.php">List of Officers</a></li>
+    <li><a href="web/dean.php">List of Deans</a></li>
+    <li><a href="web/contactus.php">Contact Us</a></li>
+    <li><a href="Data/Notice/hierarchy.pdf">Administration Hierarchy</a></li>
+    <li><a href="#" class="dropdown-button" data-activates="in_NIT-acts">NIT Acts & Statutes<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="web/documentary.php">Documentary Film</a><hr/></li>  
+    <li><a href="Data/Notice/Certificate of Registration.pdf">Institute Registration Certificate</a></li>
+    <li><a href="web/research.php">Research</a></li>
+    <li><a href="web/mou.php">MoU</a><hr/></li>
+    <li><a href="#" class="dropdown-button" data-activates="in_nirf_ranking">NIRF Ranking<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="#" class="dropdown-button" data-activates="in_nirf">NIRF<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="#" class="dropdown-button" data-activates="in_report">Reports<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="web/puc.php">Press Release</a></li>
+  </ul>
+<ul id="in_forms_procedure" class="dropdown-content black-text bold">
+    <!-- <li><a href="Data/Academic_forms/Procedure of certificates.pdf">Procedure</a></li> -->
+    <li><a href="web/issuance_documents_forms.php">Forms & Procedure</a></li>
+   
+  </ul>
+  <ul id="in_fees_structure" class="dropdown-content black-text bold">
+    <!-- <li><a href="Data/Academic_forms/Procedure of certificates.pdf">Procedure</a></li> -->
+    <li><a href="Data/Notice/2020/November/Fee Structure BTech.pdf">B.Tech.</a></li>
+    <li><a href="Data/Notice/2020/November/Fee Structure MSc.pdf">M.Sc.</a></li>
+   
+  </ul>
+
+  <ul id="in_academic_calendar" class="dropdown-content black-text bold">
+    <li><a href="qlinks/Academic Calendar2018-19.pdf">Academic Calender 2018-19</a></li>
+   <li><a href="qlinks/Academic Calendar2019-20.pdf">Academic Calender 2019-20</a></li> 
+   <li><a href="web/academic_calendar_2020_21.php">Academic Calendar 2020-21</a></li>
+   
+  </ul>
+
+  <ul id="student" class="dropdown-content black-text bold">
+    <li><a href="" class="dropdown-button" data-activates="in_student_admission">Admission<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="" class="dropdown-button" data-activates="in_fees_structure">Fees Structure<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="" class="dropdown-button" data-activates="in_forms_procedure">Downloadable Forms & its Procedure<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="" class="dropdown-button" data-activates="in_fees" >Online Fees<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="web/scholarship.php">Scholarship</a></li>
+     <li><a href="../qlinks/Revised_Syllabus_for_First_Year_of_BTech_and_MSc_(Integrated)_Programmes.pdf">Revised curriculum for First year B. Tech. and M. Sc.(Integrated) Programes</a></li>
+<li><a href="../qlinks/Equivalent for Old Courses in  Revised curriculum of B. Tech. and M. Sc. students.pdf">Equivalent Courses in Revised Curriculum for first year</a></li>
+
+    <li><a href="" class="dropdown-button" data-activates="in_academic_calendar">Academic Calendar<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="qlinks/holidaylist_2019.jpeg">List of Holidays</a><hr/></li>
+    <li><a href="qlinks/CIRCULAR - PUBLIC HOLIDAY (2021).pdf">List of Holidays - 2021</a></li>
+    <li><a href="https://sites.google.com/view/nccsvnitsurat/">National Cadet Corps (NCC)</a><hr/></li>
+    <li><a href="https://www.researchsvnit.org/">Research Scholars Portal</a><hr/></li>
+    <li><a href="web/antiragging.php">Anti-Ragging</a></li> 
+    <li><a href="Data/Notice/2018/policy_prevention_plagirism.pdf">Institute Policy for Prevention of Plagiarism</a></li> 
+  </ul>
+
+  <ul id="department" class="dropdown-content bold">
+    <li><a href="web/department/applied_chemistry/applied_chemistry_dept.php">Chemistry Department</a></li>
+    <li><a href="web/department/applied_math/applied_math_dept.php">Applied Math. & Human.</a></li>
+    <li><a href="web/department/applied_physics/applied_physics_dept.php">Physics Department</a></li>
+    <li><a href="web/department/chemical/chemical_dept.php">Chemical Engineering</a></li>
+    <li><a href="web/department/civil/civil_dept.php">Civil Engineering</a></li>
+    <li><a href="web/department/computer/computer_dept.php">Computer Engineering</a></li>
+    <li><a href="web/department/electrical/electrical_dept.php">Electrical Engineering</a></li>
+    <li><a href="web/department/electronics/electronics_dept.php">Electronics Engineering</a></li>
+    <li><a href="web/department/mechanical/mechanical_dept.php">Mechanical Engineering</a></li>
+  </ul>
+
+  <ul id="centralfacility" class="dropdown-content bold">
+    <li><a href="web/ccc.php">CCC</a></li>
+    <li><a href="web/r&c.php">R & C</a></li>
+    <li><a href=" https://mis.svnit.ac.in/SVNIT/" target="_blank" >MIS</a></li>
+    <li><a href="http://172.16.1.10/moodle/" target="_blank">Moodle</a></li>
+    <li><a href="web/department/library/library.php" target="_blank">Central-Library</a></li>
+    <li><a href="web/nptel.php" target="_blank">NPTEL</a></li>
+    <li><a href="#modal3" target="_blank">TEQIP</a></li>
+    <li><a href="http://www.svnit.ac.in/web/qip.php" target="_blank">QIP Centre</a>
+    <li><a href="http://www.svnit.ac.in/anchor/anchor.html" target="_blank">Anchor Cell</a></li>
+    <li><a href="web/cce.php">CCE</a></li>
+    <li><a href="web/ashine.php">ASHINE-TBI</a><hr/></li>
+    <li><a href="web/physical.php">Physical Education</a></li>
+    <li><a href="web/campus.php?tag=canteen">Canteen</a></li>
+    <li><a href="web/dcc.php?tag=about">Day Care Centre</a></li>
+    <li><a href="web/Hostel.php" >Hostels</a></li>
+    <li><a href="web/campus.php?tag=guesthouse">Guest House</a></li>
+    <li><a href="web/campus.php?tag=hcc">Health Center</a></li>
+    <li><a href="web/campus1.php?tag=security">Security</a></li>
+    <li><a href="web/campus1.php?tag=banks">Bank</a></li>
+    <li><a href="web/campus1.php?tag=postoffice">Post Office</a></li>
+  </ul>
+  <ul id="rti" class="dropdown-content bold">
+    <li><a href="Data/Notice/rti/RTI_ACT_2005.pdf">RTI Act 2005</a></li>
+    <li><a href="Data/Notice/rti/Application_Fee.pdf">Application Fee</a></li>
+    <li><a href="https://rtionline.gov.in/index.php">RTI Request Application</a></li>
+    <li><a href="https://rtionline.gov.in/index.php">First Appeal</a></li>
+    <li><a href="https://dsscic.nic.in/online-appeal-application/onlineappealapplication">Second Appeal</a></li>
+    <li><a href="Data/Notice/rti/Public_Information_Officers(PIOs).pdf">Public Information Officers (PIOs)</a></li>
+    <li><a href="web/cpio.php">Central Public Information Officers</a></li>
+    <li><a href="web/faa.php">First Appellate Authority</a></li>
+    <li><a href="http://www.svnit.ac.in/web/rti-disclouser.php">Disclosures Under Section 4(1)(b) - RTI Act 2005</a></li>
+    
+    <li><a href="web/Return_Information.php">RTI Annual Return Information</a></li>
+    <li><a href="Data/Notice/2020/April/post-benchmark-disabilities.pdf">Post Identified for Person with Benchmark Disabilities</a></li>
+    
+  </ul>
+  <ul id="career" class="dropdown-content bold">
+    <li><a href="web/placement.php">Training & Placement</a></li>
+    <li><a href="web/jobs.php">Jobs @ SVNIT<img src="images/new.gif" width="27px" /></a></li>
+  </ul>
+
+  <ul id="quicklinks" class="sizing dropdown-content bold" style="overflow-y: auto;">
+    <li><a href="web/nmeict.php">NME-ICT</a></li>
+    <li><a href="web/nad.php">NAD</a></li>
+    <li><a href="Data/phonebook.pdf" target="_blank">Phonebook</a></li>
+    <li><a href="qlinks/OFFICE_ORDER_TIMING2019.pdf">Institute Timings</a></li>
+    <li><a href="qlinks/GST No. SVNIT.jpeg">GST Information</a><hr/></li>
+    <li><a href="web/womencell.php">Women Cell</a></li>
+    <li><a href="qlinks/AlignmentofServiceRules.pdf">Sexual Harassment Act</a></li>
+    <li><a href="web/icc.php">ICC</a><hr/></li>
+    <li><a href="qlinks/eresources.html">INDEST resource</a></li>
+    <li><a href="web/expert_talks.php">Expert Talks</a></li>
+    <li><a href="qlinks/CPDA_2014.pdf">CPDA by seeking information</a></li>
+    <li><a href="web/download.php">Download Forms and Informations</a></li>
+   <!--  <li><a href="web/download_apprasal.php">Evaluation Form / Faculty self appraisal form</a></li> -->
+    <li><a href="qlinks/housekeeping.pdf">Housekeeping & Sanitation</a></li>
+    <li><a href="web/gallery.php">Photogallery</a></li>
+    <li><a href="images/map.jpg" target="_blank">Campus Map</a></li>
+  </ul>
+
+
+  <ul id="slide-out" class="side-nav bold">
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">About Us<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/brief_writeup.php">Brief Write - Up</a></li>
+              <li><a href="web/director.php">Director's Message</a></li>
+              <li><a href="web/registrar.php">Brief about Registrar</a></li>
+              <li><a href="web/puc.php">Board of Governors</a></li>
+              <li><a href="Data/Notice/aboutus/senatemembers.pdf">Senate Members</a></li>
+              <li><a href="http://www.nitcouncil.org.in" target="_blank">Council of NITs</a></li>
+              <li><a href="web/officers.php">List of Officers</a></li>
+              <li><a href="web/dean.php">List of Deans</a></li>
+              <li><a href="web/contactus.php">Contact Us</a></li>
+              <li><a href="Data/Notice/hierarchy.pdf">Administration Hierarchy</a></li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">NIT Acts & Statutes<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                          <li><a href="web/forms/NIT_STATUTES_final.pdf" target="_blank">NIT Statutes (NITs)</a></li>
+                          <li><a href="web/forms/act.pdf">NIT ACT</a></li> 
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="web/documentary.php">Documentary Film</a><hr/></li>  
+              <li><a href="web/research.php">Research</a></li>
+              <li><a href="web/mou.php">MoU</a><hr/></li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">NIRF Ranking<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                         <li><a href="qlinks/NIRF RANKING 2017.pdf">NIRF Ranking 2017</a></li>
+                          <li><a href="qlinks/NIRF RANKING 2018.pdf">NIRF Ranking 2018</a></li>
+                          <li><a href="qlinks/NIRF RANKING 2019.pdf">NIRF Ranking 2019</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">NIRF<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="web/nirf.php">NIRF 2017</a></li>
+                        <li><a href="web/nirf/2018/Final_Submitted_NIRF_Report_2018.pdf">NIRF 2018</a></li>
+                        <li><a href="web/nirf/2019/FinalSubmittedDataNIRF 2019-07-Dec-2018.pdf">NIRF 2019</a></li>
+                        <li><a href="web/nirf/2020/Sardar Vallabhbhai National  Institute of Technology20200106.pdf">NIRF 2020</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Report<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="Data/about/ANNUALREPORT2014-15.pdf">Annual Report</a></li>
+                        <li><a href="web/accountreport.php">Annual Account Report</a></li>
+                        <li><a href="qlinks/acr_ug.pdf">Accrediation Report: UG</a></li>
+                        <li><a href="qlinks/acr_pg.pdf">Accrediation Report: PG</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="web/puc.php">Press Release</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion bold">
+        <li><a class="collapsible-header">Student<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Admission<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="web/admission.php?tag=dasa">DASA</a></li>
+                        <li><a href="web/admission.php?tag=ug">B.Tech. &nbsp; M.Sc.</a></li>
+                        <li><a href="web/admission.php?tag=mtech">M.Tech.</a></li>
+                        <li><a href="web/admission.php?tag=phd">Ph. D.</a></li>
+                        <li><a href="web/qip.php">QIP</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Fees Structure<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        
+                        <li><a href="Data/Notice/2020/November/Fee Structure BTech.pdf">B.Tech.</a></li>
+                        <li><a href="Data/Notice/2020/November/Fee Structure MSc.pdf">M.Sc.</a></li>
+                        
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Downloadable Forms & its Procedure<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        
+                        <li><a href="web/issuance_documents_forms.php">Forms & Procedure</a></li>
+                        
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Online Fees<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="https://mis.svnit.ac.in/mispay/" target="_blank">Payment & Registration</a></li>
+                        <li><a href="Data/fees/OnlineFeePayment_RegistrationGuideline16-07-2016.pdf" target="_blank">Guidelines</a></li > 
+                      </ul>
+                    </div><hr/>
+                  </li>
+                </ul>
+              </li>
+              
+              <li><a href="web/scholarship.php">Scholarship</a></li>
+
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Academic Calendar<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        
+                        <li><a href="qlinks/Academic Calendar2018-19.pdf">Academic Calendar 2018-19</a></li>
+                        <li><a href="qlinks/Academic Calendar2019-20.pdf">Academic Calendar 2019-20</a></li> 
+                        <li><a href="web/academic_calendar_2020_21.php">Academic Calendar 2020-21</a></li>
+                        
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+          
+ 			          <li><a href="qlinks/holidaylist_2019.jpeg">List of Holidays</a><hr/></li>
+                <li><a href="qlinks/CIRCULAR - PUBLIC HOLIDAY (2021).pdf">List of Holidays - 2021</a><hr/></li>
+  
+            
+              <li><a href="https://sites.google.com/view/nccsvnitsurat/">National Cadet Corps (NCC)</a><hr/></li> 
+              <li><a href="https://www.researchsvnit.org/">Research Scholars Portal</a><hr/></li>          
+              <li class="no-padding"><a href="web/antiragging.php" target="_blank">Anti-Ragging</a></li>
+              <li><a href="Data/Notice/2018/policy_prevention_plagirism.pdf">Policy for Prevention of Plagiarism</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Department<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/department/applied_chemistry/applied_chemistry_dept.php">Chemistry Department</a></li>
+              <li><a href="web/department/applied_math/applied_math_dept.php">Applied Math. & Human.</a></li>
+             
+              <li><a href="web/department/applied_physics/applied_physics_dept.php">Physics Department</a></li>
+              <li><a href="web/department/chemical/chemical_dept.php">Chemical Engineering</a></li>
+              <li><a href="web/department/civil/civil_dept.php">Civil Engineering</a></li>
+              <li><a href="web/department/computer/computer_dept.php">Computer Engineering</a></li>
+              <li><a href="web/department/electrical/electrical_dept.php">Electrical Engineering</a></li>
+              <li><a href="web/department/electronics/electronics_dept.php">Electronics Engineering</a></li>
+              <li><a href="web/department/mechanical/mechanical_dept.php">Mechanical Engineering</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Central Facility<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/ccc.php">CCC</a></li>
+              <li><a href="web/r&c.php">R & C</a></li>
+              <li><a href="https://mis.svnit.ac.in/SVNIT/default.aspx" target="_blank">MIS</a></li>
+              <li><a href="http://172.16.1.10/moodle/" target="_blank">Moodle</a></li>
+              <li><a href="web/department/library/library.php" target="_blank">Central-Library</a></li>
+              <li><a href="web/nptel.php" target="_blank">NPTEL</a></li>
+              <li><a href="#modal3" target="_blank">TEQIP</a></li>
+              <li><a href="http://www.svnit.ac.in/web/qip.php" target="_blank">QIP Center</a></li>
+              <li><a href="http://www.svnit.ac.in/anchor/anchor.html" target="_blank">Anchor Cell</a></li>
+              <li><a href="web/cce.php">CCE</a></li>
+              <li><a href="web/ashine.php">ASHINE-TBI</a><hr/></li>
+              <li><a href="web/physical.php">Physical Education</a></li>
+              <li><a href="web/campus.php?tag=canteen">Canteen</a></li>
+              <li><a href="web/dcc.php?tag=about">Day Care Centre</a></li>
+              <li><a href="web/Hostel.php">Hostels</a></li>
+              <li><a href="web/campus.php?tag=guesthouse">Guest House</a></li>
+              <li><a href="web/campus.php?tag=hcc">Health Center</a></li>
+              <li><a href="web/campus1.php?tag=security">Security</a></li>
+              <li><a href="web/campus1.php?tag=banks">Bank</a></li>
+              <li><a href="web/campus1.php?tag=postoffice">Post Office</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">RTI<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="Data/Notice/rti/RTI_ACT_2005.pdf">RTI Act 2005</a></li>
+    <li><a href="Data/Notice/rti/Application_Fee.pdf">Application Fee</a></li>
+    <li><a href="https://rtionline.gov.in/index.php">RTI Request Application</a></li>
+    <li><a href="https://rtionline.gov.in/index.php">First Appeal</a></li>
+    <li><a href="https://dsscic.nic.in/online-appeal-application/onlineappealapplication">Second Appeal</a></li>
+    <li><a href="Data/Notice/rti/Public_Information_Officers(PIOs).pdf">Public Information Officers (PIOs)</a></li>
+    <li><a href="web/cpio.php">Central Public Information Officers</a></li>
+    <li><a href="web/faa.php">First Appellate Authority</a></li>
+    <li><a href="http://www.svnit.ac.in/web/rti-disclouser.php">Disclosures Under Section 4(1)(b) - RTI Act 2005</a></li>
+    
+    <li><a href="web/Return_Information.php">RTI Annual Return Information</a></li>
+    <li><a href="Data/Notice/2020/April/post-benchmark-disabilities.pdf">Post Identified for Person with Benchmark Disabilities</a></li>
+    
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+     <li class="no-padding">
+      <ul id="rti" class="dropdown-content bold">
+    <li><a href="">RTI Act 2005</a></li>
+    <li><a href="">Application Fee</a></li>
+    <li><a href="">RTI Request Application</a></li>
+    <li><a href="">First Appeal</a></li>
+    <li><a href="">Second Appeal</a></li>
+    <li><a href="">Public Information Officers (PIOs)</a></li>
+    <li><a href="web/cpio.php">Central Public Information Officers</a></li>
+    <li><a href="web/faa.php">First Appellate Authority</a></li>
+   <li><a class="collapsible-header">RTI Manual under Section 4<br/> of the RTI Act, 2005<i class="material-icons right">arrow_drop_down</i></a>
+    <li><a href="web/Return_Information.php">RTI Annual Return Information</a></li>
+    <li><a href="Data/Notice/2020/April/post-benchmark-disabilities.pdf">Post Identified for Person with Benchmark Disabilities</a></li>
+    
+  </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Career<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>  
+              <li><a href="web/placement.php">Training & Placement</a></li>
+              <li><a href="web/jobs.php">Jobs @ SVNIT<img src="images/new.gif" width="27px" /></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Quick Links<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul class="small-nav">
+              <li><a href="Data/phonebook.pdf" target="_blank">Phonebook</a></li>
+              <li><a href="qlinks/OFFICE_ORDER_TIMING2019.pdf">Institute Timings</a></li>
+              <li><a href="qlinks/GST No. SVNIT.jpeg">GST Information</a><hr/></li>
+              <li><a href="web/womencell.php">Women Cell</a></li>
+              <li><a href="qlinks/AlignmentofServiceRules.pdf">Sexual Harassment Act</a></li>
+              <li><a href="qlinks/OfficeOrderreconstitutionofICCofSVNIT2016.pdf">ICC</a><hr/></li> 
+              <li><a href="qlinks/eresources.html">INDEST resource</a></li>
+              <li><a href="web/expert_talks.php">Expert Talks</a></li>
+              <li><a href="qlinks/CPDA_2014.pdf">CPDA by seeking information</a></li>
+              <li><a href="web/download.php">Download Forms and Informations</a></li>
+              
+              <li><a href="qlinks/housekeeping.pdf">Housekeeping & Sanitation</a></li>
+              <li><a href="web/gallery.php">Photogallery</a></li>
+              <li><a href="images/map.jpg" target="_blank">Campus Map</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="navbar-fixed" style="z-index:9;height: 30px;">
+    <nav style="background-color: rgb(56,75,123); line-height: 0px;">
+      <div class="nav-wrapper " style=" padding-left: 5%; padding-right: 5%;">
+        <div id="google_translate_element" class="right" style="padding-top: 0.15%"></div>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <a href="https://mail.google.com/a/svnit.ac.in" target="_blank" class="right button tooltipped" data-position="base" data-delay="0" data-tooltip="Webmail" style="padding:0px 2%;color: #fff"><i class="material-icons" style="line-height: 30px;height: 1%;">mail_outline</i></a>  
+        <a href="#modalsearch" class="right button tooltipped" data-position="base" data-delay="0" data-tooltip="Search" style="padding:0px 2%;color: #fff"><i class="material-icons" style="line-height: 30px;height: 1%">search</i>&nbsp</a>    
+      </div>
+    </nav>
+  </div>
+
+  <div class="navbar-fixed">
+    <nav class="white">
+      <div class="nav-wrapper black-text" style="padding-left:1%;padding-right:1%">
+        <a href="index.php" class="brand-logo" style="padding-top:5px;"><img style="padding-top:2px" width="100" height="50" class="responsive-img" src="images/svnit1.png" alt="svnit"/></a> 
+<!--
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/india_flaag.gif"/ style="height: 50px; width: 100px"></a>
+-->
+          <ul class="right hide-on-med-and-down bold">
+            <li><a class="dropdown-button" href="" data-activates="aboutus" data-beloworigin="true">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="student" data-beloworigin="true">Student<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="department" data-beloworigin="true">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="centralfacility" data-beloworigin="true">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="rti" data-beloworigin="true">RTI<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="career" data-beloworigin="true">Career<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="quicklinks" data-beloworigin="true">Quick Links<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="slider" class="responsive">
+        <ul class="slides">
+	        <li>
+            <img src="images/slider/slider1.png" alt="slider" class="responsive"> 
+          </li>
+           
+          <li>
+            <img src="images/slider/slider7.png" alt="slider" class="responsive"> 
+            
+          </li>
+          <li>
+            <img src="images/slider/slider8.png" alt="slider" class="responsive"> 
+            
+          </li>
+          <li>
+            <img src="images/slider/slider3.png" alt="slider" class="responsive"> 
+            
+          </li>
+           <li>
+            <img src="images/slider/slider4.png" alt="slider" class="responsive"> 
+            
+          </li>
+         
+          <li>
+            <img src="images/slider/slider6.png" alt="slider" class="responsive"> 
+            
+          </li>
+          
+
+
+            <div class="caption center-align">
+              <h5>Sardar Vallabhbhai National Institute of Technology</h5>
+              <h6 class="light grey-text text-lighten-3"><b>Institute of National Importance<br/>Since 1961</b></h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+     
+    <div class="col">
+      <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B> Our Mission</B></span>
+      </div>
+      <h6>"To be a globally accepted centre of excellence in technical education catalyzing absorption, innovation, diffusion and transfer of high technologies resulting in enhanced quality for all the stake holders"</h6>
+      <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B> Our Vision</B></span>
+      </div>
+      <h6>"To be one of the leading Technical Institutes disseminating globally acceptable education, effective industrial training and relevant research output"</h6>
+     
+
+     
+         <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B style="color: white">Achievements</B></span><a href="web/achievements.php" class="right white-text">read more...</a>
+      </div>
+        <div id="nt-1-container" class="nt-container">
+          <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+          <div class="container" style="width: 94%";>
+	<div class="row Centre">
+  		<table class = "bordered striped">
+        <tr> 
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/2021/2021_01_03 5_11 pm Office Lens.pdf">Congratulation to Timbadiya Prafulkumar Vasharambhai, Patel Prem Lal and Patel Shaileshkumar Bhikhabhai for Desing patent on 'Sediment Trap'</a></td>
+        </tr>
+         <tr> 
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/2021/WhatsApp Image 2020-12-28 at 15.40.05.jpeg">Congratulation to Dr. K. D. Yadav for a design patent on Leaves Cutting Machine</a></td>
+        </tr>
+         <tr> 
+          
+          <td style="text-align: justify;"><a href="#">Congratulations to Dr. Pawan Sharma for a Patent Granted titled 'A PROCESS OF PREPARATION OF ORDERED CELL METAL FOAM'</a></td>
+        </tr>
+        <tr> 
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/2021/Alka Patent document.jpg">Congratulations to Dr. Alka Mungray and her Ph. D Student Dr. Pankaj for a patent titled 'PPEA/MAA active layer containing forward osmosis membrane and a method of preparing thereof'.</a></td>
+        </tr>
+      <tr> 
+          
+  		  <tr> 
+          
+          <td style="text-align: justify;"><a href="#">Congratulation to Dr. Ravipudi Venkata Rao and Dr.  Z. V. P. Murthy for being getting a positions of Top 2% world-wide rankings of SVNIT researchers</a></td>
+        </tr>
+      <tr> 
+          
+          <td style="text-align: justify;"><a href="#">Congratulation to Dr. Ashish Dhamaniya, Associate Prof., Civil Engineering Department, has received an International Project titled  "Warrants for automation of toll plazas under mixed traffic conditions" along with German Co Partner Prof. Dr. Constantinos Antoniou at TU Munich under the DST DAAD call 2019.</a></td>
+        </tr>
+
+         <tr> 
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/2020/COVID 2019.pdf"> Technical Interventions from Students, Staff and Faculty members of the Institute for COVID 2019</a></td>
+        </tr>
+
+         <!-- <tr> 
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/2020/Patent Certificate.pdf">  
+          Patent entitled "NOVEL6-NITRO-3-(4-OXO-THIAZOLIDIN-2-YLIDENEAMINO)-2-PHENYL-3HQUINAZOLIN-4-ONE AND 5-BENZILIDINE DERIVATIVES"  has been granted to: 1.JAUHARI SMITA MANISH, 2.RANA ANIRUDDHASINH MAHENDRASINH, 3.DESAI KISHOR RATILAL</a></td>
+        </tr> -->
+       <!--  <tr> 
+          
+          <td style="text-align: justify;"><a href=""> Congratulation to Mr. Atul Yadav (D19EL001, Ph. D. Scholar EED) for winning the best paper award under the guidance of Dr. Vasundhara Mahajan, Asso. Prof. EED, SVNIT for a paper entitled, "Transmission system reliability evaluation by incorporating STATCOM in the system network", at IEEE Student Conference on Research and Development (SCOReD) 2019 held at Universiti Teknologi PETRONAS (UTP), Malaysia from 15-17 Oct 2019.</a></td>
+        </tr>
+        <tr>
+          
+          <td style="text-align: justify;"><a href=""> Congratulation to Mr. Neeraj Singh (D18EL003, , Ph. D. Scholar EED) for winning the travel grant award under the guidance of Dr. Vasundhara Mahajan, Asso. Prof. EED, SVNIT for a paper entitled, "Fuzzy Logic for Reducing Data Loss During Cyber Intrusion in Smart Grid Wireless Network", at IEEE Student Conference on Research and Development (SCOReD) 2019 held at Universiti Teknologi PETRONAS (UTP), Malaysia from 15-17 Oct 2019.</a></td>
+        </tr>
+        <tr>
+          
+          <td style="text-align: justify;"><a href=""> Congratulation to Ms. Soumya Mudgal (U16EE004, B. Tech. 4th year student, EED) for winning the travel grant award under the guidance of Dr. Vasundhara Mahajan, Asso. Prof. EED, SVNIT for a paper entitled, "Reliability and Active Power Loss Assessment of Power System Network with Wind Energy", at IEEE Student Conference on Research and Development (SCOReD) 2019 held at Universiti Teknologi PETRONAS (UTP), Malaysia from 15-17 Oct 2019.</a></td>
+        </tr>
+        <tr>
+          
+          <td style="text-align: justify;"><a href="">Congratulation to Mr. Neeraj Singh (D18EL003, , Ph. D. Scholar EED) for winning the travel grant award under the guidance of Dr. Vasundhara Mahajan, Asso. Prof. EED, SVNIT for paper entitled, "Mathematical Model of Cyber Intrusion in Smart Grid", at IEEE-PES GTD Grand International Conference & Exposition Asia 2019 (IEEE-PES GTD Asia 2019) from 19-23 March 2019 in Bangkok, Thailand.</a></td>
+        </tr>
+         <tr>
+          
+          <td style="text-align: justify;"><a href="">Congratulation to Mr. Neeraj Singh (D18EL003, , Ph. D. Scholar EED) for winning the travel grant award under the guidance of Dr. Vasundhara Mahajan, Asso. Prof. EED, SVNIT for a paper entitled, "Identification and Prevention of Cyber Attack in Smart Grid Communication Network", at 2nd International Conference on Information and Communications Technology 2019 (2nd ICOIACT 2019), 24-25 July, Universitas AMIKOM Yogyakarta, Indonesia.</a></td>
+        </tr> -->
+        <tr>
+          
+          <td style="text-align: justify;"><a href="../Data/achievements/patent_hbm.pdf">"Congratulation to Dr. Hemantkumar B. Mehta, Associate Prof., Mechanical Engineering Department and Mr. Niravkumar Mukundbhai Patel (DS15ME002), Ph.D. Research Scholar, Mechanical Engineering Department for the acceptance of a filed patent on "Stacked Minichannel Heat Sink" with Application No.303545” by Government of India. This patent was filed under the sponsored research project (Core Research) of SERB, DST on variable channel width DL-MCHS. The project sanctioned budget is Rs. 24.5 lakh."</a></td>
+        </tr>
+
+<!--   			<tr>
+  				
+  				<td style="text-align: justify;"><a href="../Data/achievements/2. Dr C D Modhera_AWARDS_DGBADAGHA_Details.pdf">Congratulation to Ms Damyantiben Govindbhai Badagha (Ph.D Student), Professor Dr C D Modhera, Applied Mechanics Department for the “Young Researcher In Civil Engineering Award” in the Global Organised Research and Education Association’s, 1st International Award ceremony held on 31st January, 2019 at India International Centre Delhi for paper publications & various achievements, “Bright Researcher Award” from International Institute of Organised Research, as well “Best Paper Award” for her paper presentation in 4th International Youth Symposium (1st-2nd February 2019) on the paper entitled “Utilization of Waste Materials to Produce Economical Concrete: Achieved Goal for Environment Prevention & Sustainable Development” from her DST GUJCOST Funded Minor Research Project “Experimental Studies on High Performance Concrete Using Industrial Wastes”.</a></td>
+  			</tr>
+ -->
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="../Data/achievements/ProfSAC2018.png">Congratulations to Prof. S. A. Channiwala, Prof., MED for the conferment of the prestigious award of Bhatnagar Fellowship for the year 2018 by Council of Scientific & Industrial Research (CSIR) which is awarded to an individual scientist in recognition of outstanding work.</a>  || <a href="../Data/achievements/sac.jpg"> Photo </a></td>
+  			</tr>
+
+  		<!-- 	<tr>
+  				
+  				<td style="text-align: justify;"><a href="">Congratulations to Dr. Ravikant for the selection of Indian faculty secondment to Asian Institute of Technology (AIT), Bangkok(Thailand) by the Ministry of Human Resource Development, New Delhi for a period of upto 16 weeks during the January, 2019 semester to teach ‘Inventory and Logistics Management’ Course.</a></td>
+  			</tr> -->
+<!-- 
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="">Congratulations to Dr. Sushil Kumar, Asst.Prof., Applied  Mathematics & Humanities Department for the research project titled “Computational study on multi-dimensional Stefan problems in biological tissues based on non-Fourier heat transfer model using mesh-free method” of Rs. 1620518/- for a duration of 36 months.</a></td>
+  			</tr> -->
+
+  		<!-- 	<tr>
+  				
+  				<td style="text-align: justify;"><a href="../Data/achievements/DrCDModhera.pdf">Congratulation to Ms Damyantiben Govindbhai Badagha, Ph.D Student of Professor Dr C D Modhera, Applied Mechanics Department for the Prestigious IRDP Best Young Researcher National Award 2018, from the Innovative Research Developers and Publishers, Chennai for her remarkable achievements in Research and Publications on 30th May 2018.<!-- Congratulations to Dr. Sriniwas Arkatkar, Asst. Prof., Civil Enggineering Dept.ED on the approval to conduct the GIAN course on "Effective Road Safety Practices :  revention is better than Cure" during 6.8.2018 to 10.8.2018. The foreign expert is Srinivas Pulugurtha, Prof., UNC Charlotte, USA.. </a></td>
+  			</tr> -->
+<!-- 
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="">Congratulations to Dr. Sriniwas Arkatkar, Asst. Prof., Civil Enggineering Dept.ED on the approval to conduct the GIAN course on "Effective Road Safety Practices :  Prevention is better than Cure" during 6.8.2018 to 10.8.2018. The foreign expert is Srinivas Pulugurtha, Prof., UNC Charlotte, USA.</a></td>
+  			</tr>
+ -->
+  			<!-- <tr>
+  				
+  				<td style="text-align: justify;">Congratulation to Dr. Bharat Dholakiya, Asst. Prof., Applied Chemistry Dept. and Dr. Patel Jigarkumar Rameshbhai (D09AS301), Ph.D., Applied Chemistry Dept. for a patent entitled "3-HALO DERIVATIVES OF  THIOMALEIC ANHYDRIDE AND PROCESS FOR THE PREPARATION THEREOF" with  Application No.3599/MUM/2011 in 22/12/2011. Indian Patent office has granted patent on 16/05/2018 (Patent  no. 296833).      <a href="../achievements/2018/grantletter_bharat_dholakiya.pdf">Grant Letter</a>  |  <a href="../achievements/2018/patentcertificate_Bharat_Dholakiya.pdf"> Patent Certificate</a></td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulation to Dr. S. N. Sharma, Asso. Prof., EED for having been selected by Slovenia Academy of Science and Arts (SASA) to undertake a 1 month visit to Slovenia under INSA-SASA Bilateral Exchange Programme. He visited during 20th May to 20th June this year.</a></td>
+  			</tr> -->
+
+  		<!-- 	<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulation to Dr.(Ms.) Alka A. Mungray, Assistant Professor, Chemical Engineering Department to receive a funded R & D project titled "The near future air cathode Osmotic microbial fuel cell (OMFC) for wastewater treatment, electricity generation and pure water extraction" of Rs. 28,46,000/- from Science and Engineering Research Board (SERB), Department of Science and Technology (DST)</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Dr. Rajender Kumar, Assistant Professor, Applied Chemistry Department on the financial sanction of the research project titled "Polydopamine based Nanoparticles with Antimicrobial and antiarsenic properties for water disinfection and Remidiation" by Science and Engineering Research Board (SERB) of Rs. 44,30,000/-</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="http://svnit.ac.in/Data/achievements/4_DGB_CDM_AWARD.pdf" target=_blank>Congratulation to Ms. Damyantiben Govindbhai Badagha (Ph.D Student), Dr. C. D. Modhera (Professor, Applied Mechanics Department) for twice Achieved the International Association of Advanced Materials Young Scientist Award (from The Department of Science and Technology,Gujcost funded MRP) by IAAM Association of Sweden in March 2016 at Delhi University in ICMTECH 2016 Conference & ICNANO March Conference 2017 at Vinoba Bhave Research Institute, Allahabad.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="http://svnit.ac.in/Data/achievements/2_Best_Paper.pdf" target=_blank>Congratulation to Ms Damyantiben Govindbhai Badagha, Research Scholar and Professors Dr. C. D. Modhera & Dr. S. A. Vasanwala, Applied Mechanics Department for the best paper award in the 20th International Conference on Artificial Neural Networks in Civil Engineering held (ICANNCE 2018) on Feb 22-23, 2018 at Mumbai for the paper entitled Mix Proportioning and Strength Prediction of High Performance Concrete Including Waste Using Artificial Neural Network by World Academy of Science, Engineering and Technology.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to our 15 SVNIT Athletes(13 boys and 2 girls) for participation in All India Inter NIT Athletic tournament at MNIT Jaipur. Applause to Nine of them who won 11 medals. And sincere thanks to SAS Officer, Head Physical Education and Prof. In-charge SAC, Dean (SW) and Asso. Dean (SW).</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to  Dr. Suresh Kumar Kailasa, Asst. Prof., Applied Chemistry Department  and  Prof Z. V. P. Murthy, Prof & Head, Chemical Engineering Department for receiving a funded R & D project titled " Design of Green Synthetic Approaches for Automatically Precise Nanocluster their specific Interactions: Development of Miniaturised Analytical Method? of Rs. 35,04,655/- under Science and Engineering Research Board (SERB).</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Dr. Jyoti Menghani, Asst. Prof., Mechanical Engineering Department for receiving a funded R & D project  titled "Study of Slurry Erosion behaviour of High Entropy Alloy Coatings? of Rs. 27,72,000/- under Science & Engineering Research Board (SERB).</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to V. J. Sharma (Ph.D. Student), S. A. Vasanvala and C. H. Solanki for the best paper and will be awarded by IGS. Prof. Dinesh Mohan Biennial Award for the paper, "Behaviour of Cushioned Composite Piled Raft Foundation under Lateral Forces" published in Indian Geotechnical Journal.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				 <td style="text-align: justify;"><a href="" target=_blank>Congratulations to Dr. S. A. Channiwala, Prof., MED for receiving a funded R & D project titled "CoPT Combustor Technology Development for small Gas Turbine/Turbo fan Engine? of Rs. 1,74,22,000/- from Defence Research & Development Organisation (DRDO).</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Dr. A. D. Darji, Asst. Prof., ECED, SVNIT and Nodal Officer for the successful organization of 24 hrs Open Government Data Hackathon (#OpenGovDataHack) scheduled on 23-24 Sept. 2017 at SVNIT, Surat as part of the Startup Eco-system Development program of National Informatics Centre (NIC), Government of India, Internet and Mobile Association of India (IAMAI), Startup India and Surat Smart City Development Limited. The Hackathon is conducted across seven shortlisted cities of India. Around 40 teams and 5 Startup have taken part for App development & info graphic category. More than 200 participants have actively contributed.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to B.Tech.III(Civil) students Mr. Marmik Jariwala, Mr.Deepak Ravuri, Mr. Kapil Sharma for first prize out of 10 teams in the DWA and IFAT competition "3rd  University Challenge, India" held at Mumbai on 27 September 2017. They are invited to visit the firm in Pune and also eligible for participation in the "Young Water Professionals" programme sponsored by the WILD Foundation at MUNICH,GERMANY during May 2018 .</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Ms. Aditi Toshniwal, PhD student of Dr. V. Kheraj, APD and Ms. Nimisha Singh, PhD student, ACD for selection of the prestigious Raman-Charpak Fellowship 2017, jointly funded by the DST, GoI and the SST, Govt of France. Both these students are alumni of our Integrated MSc programs. Under this fellowship, they will spend six months at FRANCE working with reputed research groups.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Aniruddha Deshmukh (I15MA022), Sarthak Gupta (I15MA002) and Rahul Kamble (I15MA005) for the first prize in the quiz competition, to Aniruddha for the second prize in seminar (individual event) at Siddhant-the math festival, at MNIT, Jaipur during August 18-19,2017.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Congratulations to Shubham Yadav (I15MA008) and Kavit Nanavati (I14MA018) to qualify the cut off marks for MADHAVA MATHEMATICS COMPETITION, held on 8th January, 2017. They will get the opportunity to attend the Nurture Camp on Mathematics to be held at St. Xaviers College,Kolkata fully sponsored by National Board for Higher Mathematics (NBHM).</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>NIT Conclave-2017 is a confluence of all 31 NITs hosted by NIT Silchar during September 1-3 2017.Our students Shailja Shah (U15CO020), Supriya Murdia (I14MA013), Archit Gupta (U14CH093), Kartik Nighania (U14EC119), Tejaswita Atal (U14CO062) proudly brought 2nd place.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Dr. Hemantkumar B. Mehta, Asst. Prof., MED has received a research project titled 'Investigations on a novel stacked microchannel heat sink using efficient coolants' from SERB, DST, India of Rs. 24,47,500/- for the duration of three years.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank> Dr. Jignasa Gohel, Asst. Prof., CHED has received R & D project titled 'Synthesis and characterization of semiconductor/oxide materials for cost effective perovskite solar cell modules' of Rs. 16,32,000/- under Science & Engineering Research Board (SERB), New Delhi.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="http://isrindia.com/isr/Government-partner.aspx" target=_blank>Dr. Debesh Roy, APD has been selected for the National Award 'BHARAT VIKAS AWARD' by the Institute of Self Reliance, an organization of 'Bharat Vikas Parishad' with government partners as 'National Skill Development Agency' and 'Indian Red Cross Society' for his outstanding contribution to the society by honourable Union Minister & National Leaders, for their excellent devotion in respective fields like Science & Technology, Acting, Medicine, Social work etc. on 19th November, 2017 on the occasion of 'Citizens Day' at Bhubaneswar.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Dr. R. V. Rao, Prof. Mechanical Engg. Dept. has been awarded on May 10, 2017 with the Habilitation degree "DOKTORA HABILITOWANEGO" ("Habilitated Doctor" in English) in Technical Sciences from Poland Government&apos s Cracow University of Technology during Graduation Ceremony due to the academic and research achievements including developing two new optimization algorithms (and their subsequent adoption/adaptation by various researchers worldwide in the field of optimization), higher h-index, delivering series of lectures in Polish University, authoring 5 text books by Springer-Verlag, etc.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>Dr. Yogesh Sonvane, Asst. Prof., APD has received project titled 'Novel perovskite-based solar cells: Investigation of potential properties using ab-initio approaches' from SERB, DST New Delhi of Rs. 30,09,000/- for the duration of three years.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="" target=_blank>The MoU is signed on 13th June 2017 at Pune, between Centre for Development of Advanced Computing (C-DAC), Pune and Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat for installation of Super computer "PARAM Shavak" at SVNIT for capability building in the area of High Performance Computing and Deep Learning. Duration of the MoU is Three years from the signing date of the MoU.</td>
+  			</tr>
+
+  			<tr>
+  				
+  				<td style="text-align: justify;"><a href="http://link.springer.com/journal/12046/42/4/page/1" target=_blank>Prof. J. Banerjee,MED become a Guest Editor (along with Prof. Amithabh Bhattacharya of IIT Bombay) for special issue of "Sadhana" by Springer - an Official Journal of the Indian Academy of Sciences, and  explores all branches of engineering science, including mechanics, computer science, electronics, energy,aerospace technology, materials science, nuclear engineering, systems analysis, and alternative technologies.The details of this special issue are available on http://link.springer.com/journal/12046/42/4/page/1</td>
+  			</tr>
+ -->
+        	
+      	</table>
+	</div>
+ </div>
+          </marquee>
+         
+        </div>
+         <h6>18th Convocation of SVNIT <a href="http://www.svnit.ac.in/live"><font color="red">Youtube video</font></a> | <a href="https://www.facebook.com/2056411067945837/live/"><font color="red">Facebook Video</font></a><img src="images/new.gif" width="27px" /></h6>
+         <h6><b><a href="http://svnit.ac.in/web/result_2020_2021.php">Results of exams held during Nov/Dec 2020</a></b><img src="images/new.gif" width="27px" /></h6>
+      <h6><b><a href="Data/Notice/2020/December/M. Tech. Notice (Newly admitted M.Tech. students).pdf">Physical reporting of  M.Tech Students admitted through CCMT- 2020</a></b><img src="images/new.gif" width="27px" /></h6>
+        <h6><b><a href="Data/Notice/2020/November/Immovable Property Return.pdf">Submission of Immovable Property Return by the Employees of autonomous and subordinate Institue / Organizations in the Ministry of HRD.</a></b><img src="images/new.gif" width="27px" /></h6>
+      
+        <h6><b><a href="http://www.svnit.ac.in/web/admission.php?tag=ug">U.G. Admission 2020-21</a></b><img src="images/new.gif" width="27px" /></h6>
+    
+       
+ <h6><b>FINAL NOTICE FOR FEE REMISSION : <a href="Data/Notice/2020/November/BTech-II Notice.pdf">B TECH II</a> | <a href="Data/Notice/2020/November/BTech-III Notice.pdf">B TECH III </a> | <a href="Data/Notice/2020/November/BTech-IV Notice.pdf">B TECH IV</a> </font></b></h6>
+
+ <h6><b><a href="Data/Notice/2020/July/COVID-19_Technological Progress_SVNIT.mp4" target="_blank">Covid - 19 Technological Progress, SVNIT</a> | <a href="Data/Notice/2020/January/R&CNewsletter.pdf">R & C Newsletter Vol-I</a> | <a href="Data/Notice/2020/October/R&C Newsletter Vol. II.pdf">R & C Newsletter Vol-II</a></b></h6>
+ <h6><b><a href="Data/Notice/2020/May/NOTICE - LIFE CERTIFICATE BY PENSIONERS.pdf">Notice for Pensioners (Life Certificate)</a> | <a href="Data/Notice/2020/October/IT Circular - Pensioner.pdf">IT Circular for Pensioner</a></b></h6>
+ 
+      </div>
+
+    </div>  
+
+   <b><a href="http://www.svnit.ac.in/web/jobs.php" target="_blank" style="font-size : 20px"><center><font color="blue">List for Provisionally eligible, Conditionally eligible and ineligible candidates for the post of Deputy Registrar, Senior Executive Engineer, Executive Engineer and Scientific/Technical officer </font></center></a></b>
+  </div>
+
+  <div>
+    <div class="row boards">
+      <div class="col l4 m4 s12 center-align">
+        <div class="card-panel blue-grey darken-4">
+          <span><b><a href="web/notice_events_tenders.php?tag=notice" class="white-text">Student Notice</a></b></span>
+        </div>
+        <div id="nt-1-container" class="nt-container">
+          <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+             
+<div class="container" style="width: 94%";>
+<div class="row center">
+  <table class = "bordered striped">
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://svnit.ac.in/Data/Notice/2021/January/Tagore Bhavan_Hostel section_notice_8thJan_2021.pdf"> Notice for Tagore Bhavan Hostel Students</a></td>
+</tr>
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://svnit.ac.in/Data/Notice/2021/January/Bhabha Bhavan Notice for Room Hand Over for Maintainance.pdf"> Notice for Handing Over Rooms for Maintenance Work</a></td>
+</tr>
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://svnit.ac.in/web/result_2020_2021.php"> Results of exams held during Nov/Dec 2020</a></td>
+</tr>
+      <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;">Fee Remission Notice B.Tech.I, 2020-21 : <a href="../Data/Notice/2021/January/Notice.pdf"> Notice </a> | <a href="../Data/Notice/2021/January/form.pdf">Form</a></td>
+</tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2021/January/542-01052021165540.pdf">Notice for all UG, PG and PhD students, Pre-registration process is "re-activated" through the MIS of Institute for the students, who have not done yet.</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/end_sem-jan2021.php"> End Semester Examination Schedule(M. Tech. + Ph. D.)</a></td>
+    </tr>
+
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2021/January/Online Registration Procedure for PhD 01-01-2020 (2).pdf">Online Spring (even) semester PhD admission procedure 2020</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/timetable2021.php">Time Table for B.Tech. II to IV  and M.Sc. II to IV & M. Tech. </a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/mid_sem_dec.php">M. Tech.-I Make-Up MID Semester (ODD Sem.) Exam Time Table Jan-2021 </a></td>
+    </tr>
+   
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/Short_listed_Candidates_M_Tech_R_ECED.pdf">Short Listed Candidate for M.Tech.(Research) Interview December-2020</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/short-listed_candidate_phd_dec2020.php">Short Listed Candidate for PhD Admission December-2020 </a></td>
+    </tr>
+     <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/eligible_candidate_phd_dec2020.php">List of Eligible Candidate for PhD Admission December-2020(Interview or Test) </a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/Notice Expenditure certificate.pdf">Notice of   expenditure certificate for bank loan or scholarship purpose newly admitted students for the year 2020-21</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;">B.Tech IV Yr (VII Sem)<a href="http://www.svnit.ac.in/Data/Notice/2020/December/B.Tech IV Yr (VII Sem) Project Preliminaries Examination Time Table 2020-2021.pdf"> Project Preliminaries</a>, <a href="http://www.svnit.ac.in/Data/Notice/2020/December/B.Tech IV Yr (VII Sem) Seminar Presentation Time Table 2020-2021.pdf">Seminar Presentation </a>and <a href="http://www.svnit.ac.in/Data/Notice/2020/December/B.Tech IV Yr (VII Sem) Industrial Training Viva-voce Examination Time Table 2020-2021.pdf">Industrial Training viva-voce Examination</a> Time Table 2020-2021 of Chemical Engineering Department</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/Notice for Bonafide certificte on NSP.pdf">Notice for Bonafide Certificate on NSP</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/mtech_prelim_schedule.php">M.Tech. Seminar and Dissertation (Prelim) Examinations of Mechanical Engineering Department</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/MED_UG Seminar Exam  2020-21-new.pdf">Schedule for UG Seminar Examination (MED)</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/UG_Project Preliminary Exam Schedule Dec. 2020.pdf">Schedule for UG Project Preliminary Examination (MED)</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/Digital gujarat NEW schedule for postmatric scholarship_10122020.pdf">Schedule for post metrics scholarship for SC/ST/OBC students (only Gujarat State )</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/eligible_candidate_mtech-dec2020.php">List of Eligible Candidate for M. Tech. (Research)</a> | <a href="http://www.svnit.ac.in/Data/Notice/2020/December/479 new-12092020124345.pdf"><font color="red">Reschedule</font></a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/479 new-12092020124345.pdf"><font color="red"> Online written Test and Interviews for Ph.D & M. Tech.(Research) admission is rescheduled to 22nd and 23rd December 2020</font></a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/provisional-eligible_candidate_phd_dec2020.php">List of Provisional Eligible Candidate for PhD Admission December-2020(Interview or Test) </a> | <a href="http://www.svnit.ac.in/Data/Notice/2020/December/479 new-12092020124345.pdf"><font color="red">Reschedule Notice</font></a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/end_sem-dec2020.php">End Semester Examination Schedule(December 2020)</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/Data/Notice/2020/December/NSP PORTAL EXTENSION DATE LETTER.pdf">NSP portal extension Date letter</a></td>
+    </tr>
+
+  <!-- 	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://youtu.be/lvyZ3T84bdY">SVNIT SURAT cordially invites its new Entrants (B.Tech.-I, IIIT-I & M.Sc..-I) to “ONLINE” Induction Programme on 28th November 2020.
+Open for all on Youtube Premiere Live : "Topic in English: Healthy Soul-Smart Goal" SATURDAY 28TH NOVEMBER 2020 Afternoon 02 PM IST NEW INSIGHTS  by Keynote Speaker: "Rajyogini Dr. BK Sunita Didi, PhD PEF Spiritual Wisdom Leader Awardee",Sr. Rajyoga Teacher, from Shantivan, BKHQ, Abu Road, Rajasthan.</a> | <a href="https://youtu.be/lvyZ3T84bdY"><font color="red">Video</font>
+</a></td>
+    </tr> -->
+  <!-- 	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://rebrand.ly/SVNIT-Swaranjali">LINK to SWARANJALI, 28th November 2020 (Saturday) | 6:00-8:00 P.M (IST)</a> | <a href="https://rebrand.ly/SVNIT-Swaranjali">Video</a></td>
+    </tr> -->
+     <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/end_sem_practical-dec2020.php">Online Practical Examination Timetable 2020-21</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Time Table slot A div-converted-merged ALL.pdf">Time table for online classes of First year B. Tech and MSc. (Integrated) courses starting from 1st December 2020</a> | <a href="../Data/Notice/2020/November/List of First Year Course Teacher with Contact Details.pdf">List and contact details of Course teachers for B. Tech and M. Sc first year courses</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Fee Payment and Registration.pdf">Notice for Final Fee payment and Registration</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Induction_Program_schedule_20-21.pdf">Online Induction Programme(For New Entrants) Schedule 2020-21 </a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/makeup_mid_sem-dec2020.php">Makeup Mid-Semester Examination Schedule(November 2020)</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/M. Tech. Dissertation Preliminary and Seminar abstract submission Notice-11052020125028.pdf">Notice for M.Tech. Dissertation Preliminary and Seminar Exam of Mechanical Engineering</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;">Notices for Project Preliminary and Seminars for final year students of Mechanical Engineering : <a href="../Data/Notice/2020/November/Project Preliminary Abstract Notice-11032020160558.pdf"><font color="red">Project Preliminary</font></a> | <a href="../Data/Notice/2020/November/Seminar Abstract Notice-11032020160501.pdf"><font color="red">Seminars</font></a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Fee Structure BTech.pdf">Fees Structure for B.Tech. who joined the Institute in the Academic Year 2020-21.</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Fee Structure MSc.pdf">Fees Structure for five years Integrated M.Sc. who joined the Institute in the Academic Year 2020-21.</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/2-Schedule for Ph.D. Admission (Online) Academic Year 2020-21 (Spring Semester).pdf">Schedule for Ph.D. Admission (Online) Academic Year 2020-21</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/3-Schedule for M.Tech. (Research) Admissions - Academic Year 2020-21 (Spring Semester).pdf">Schedule for M.Tech. (Research) Admissions - Academic Year 2020-21</a> | <a href="../Data/Notice/2020/November/4-M.TECH. (R) BROCHURE 2020-pdf.pdf">Brochure</a></td>
+    </tr>
+     <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Schedule_UG Seminar2020.pdf"> UG Seminar Exam Schedule November 2020(ECED)</a> | <a href="../Data/Notice/2020/October/UG Proj_Preliminary_Schedule_Dec_2020.pdf"> UG Project Preliminaries Schedule December 2020(ECED)</a></td>
+  </tr>
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/PG_Seminar Exam Schedule_Nov 2020-rotated.pdf"> PG Seminar Exam Schedule November 2020(ECED)</a> | <a href="../Data/Notice/2020/October/PG Dissertation Preliminaries Schedule Dec 2020-rotated.pdf"> PG Dissertation Preliminaries Schedule December 2020(ECED)</a></td>
+  </tr>
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/December/Notice for scholarship hard copy 28122020.pdf">Notice about Scholarship</a></td>
+  </tr>
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Online Hostel Admission  Circular _BTech_MSc.pdf">Hostel Admission Circular for  B. Tech and M.Sc Students</a></td>
+  </tr>
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/mid_sem_mtech.november2020.php"> Mid Semester Exam Time Table for M. Tech. & Ph. D Students</a></td>
+  </tr>
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/July 20 Degree Certificate.pdf" target="_blank">D20 PhD Batch Degree Certificate/Marksheet</a></td>
+</tr> 
+   
+	<tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/DOC092320-09232020151914.pdf" target="_blank"> Fee remission (B. Tech.-II, III )</a> | <a href="../Data/Notice/2020/October/B Tech IV Remission - Pending Documents.pdf" target="_blank"> Fee remission B. Tech.-IV year Students 2020-2021</a></td>
+  	</tr>
+  
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/timetable-mtechI2020.php"> Time tables of M.Tech-I (First semester) Academic year 2020-21</a> | <a href="../Data/Notice/2020/September/66-09222020171013.pdf" target="_blank"> Academic calender for Ph. D. and M. Tech. 1st Semester Students for Academic Year 2020-21 on Account of COVID-19</a></td>
+  </tr>
+  	<tr>
+  		<td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/Online Admission  Circular for Hostel_mtech_10_9.pdf" target="_blank"> Hostel Admission Circular for  All  existing M.Tech II year students (Girls and Boys) </a></td>
+	</tr>
+	
+  	<tr>
+  		<td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/Communication1.pdf" target="_blank">Communication e-mail IDs for Hostels</a></td>
+	</tr>
+
+
+  	 <tr>
+  		<td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/Cancellation Notice.pdf" target="_blank">Notice regarding cancellation of seat and refund of fees of M.Tech-I students admitted through CCMT-2020</a></td>
+	</tr>
+
+  	   <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/M. Tech. Time table-09092020124502.pdf" target="_blank">Time Table of M.Tech. ODD Sem_2020-21</a></td>
+</tr>
+     <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/220.pdf">Hostel section Notice for  Inmates of  Bhabha  Bhavan</a></td>
+    </tr>
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/219.pdf">Hostel section Notice for Inmates of Tagore Bhavan</a></td>
+    </tr>
+
+  	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/Division changes-09022020164539.pdf">Division Changes Notice for Mechanical Engineering Department</a></td>
+    </tr>
+
+   
+      <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/timetable-minor2020.php">Time Table for B. Tech. Minor Programs</a></td>
+    </tr>
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/selected_candidate_PhD_aug2020.php">List of Selected candidates for Ph D Admission</a> | <a href="../Data/Notice/2020/September/366-Instruction for PhD students.pdf">Online Registration process for Ph D students admitted in Autumn (Odd) Semester of AY 2020-21</a></td>
+    </tr>
+
+  	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Online Admission Circular for existing student of Raman Bhavan.pdf" target="_blank">Online Hostel Allotment for the Existing Students of Raman Bhavan.</a></td>
+</tr>
+
+        <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/1-Students List.pdf" target="_blank">Allotment of students for B. Tech. (Minor Degree)</a> | <a href="../Data/Notice/2020/August/2-Instruction Set.pdf" target="_blank">Instruction Set</a> | <a href="../Data/Notice/2020/August/3-Annexure.pdf" target="_blank">Registration Form</a></td>
+</tr>
+
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/M.Sc. fee 2019-20 onwards.pdf" target="_blank">Academic Fee for Five year M. Sc. Integrated Students who joined the Institute in the Academic year 2019-20 and onwards.</a></td>
+</tr>
+
+  <!-- 	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;">Fee Remission Notice B.Tech.II, III & IV 2020-21 :  | <a href="../Data/Notice/2020/July/Fee Remission Form B.Tech. 2nd to 4th.pdf"> Form </a> | <a href="../Data/Notice/2020/August/Date Exten Notice.pdf"><font color="red">Notice for Date Extended</font></a></td>
+</tr> -->
+<!-- 
+  	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/NOTICE.pdf" target="_blank">Registration for supplementary examination starting from 24th Aug 2020.</a></td>
+</tr> -->
+<!-- <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/supplementary_aug_2020.php">Supplementary Exam Schedule (August 2020)</a></td>
+    </tr>
+ -->
+  	   <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Notice - Clarification Regarding Academic Fee and Hostel Fee - 429.pdf" target="_blank">Clarification Regarding Academic and Hostel Fee Structure for M.Tech-II year and Ph D Students.</a></td>
+</tr>
+
+   <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/global electives-aug2020.pdf" target="_blank">Tentative list of Global Electives</a></td>
+</tr>
+
+       <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/provisional_rollno2020.php" target="_blank">Provisional Roll Numbers (division-wise) for A.Y. 2020-21 to be commenced w.e.f. 10th Aug, 2020.</a></td>
+</tr>
+
+        <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Timeslots-MarketingManagement.pdf" target="_blank">Time Slots - Marketing Management - Institute Elective - B.Tech. III.</a></td>
+</tr>
+
+  	  	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;">Institute Fee structure for A.Y. 2020-21 : <a href="../Data/Notice/2020/August/Seat Rent Notice.pdf" target="_blank"><font color="red">Notice</font></a></td>
+</tr>
+
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/DOC072919-07292019042901.pdf" target="_blank">Clarification regarding Tuition fee and Hostel fee of B. tech. students and fee Remission of M.Sc. Students.</a></td>
+</tr>
+
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Hostel_fees _Second_ Year.pdf" target="_blank">Hostel fee stucture for the students admitted in the year 2019-20</a></td>
+</tr>
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Hostel_fees _Third_year -onwards.pdf" target="_blank">Hostel fee stucture for the students admitted in the year 2018-19 or earlier</a></td>
+</tr>
+
+	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/timetable2020.php" target="_blank">Time Table of B.Tech. 2nd to 4th Year and M.Sc. (Integrated) 2nd to 5th Year of odd semester for academic year 2020-21 starting from 10th Aug 2020 in online mode</a></td>
+</tr>
+  		<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Hostel Fee Structure_2020-21.pdf" target="_blank">Hostel Fees Structure 2020-21</a></td>
+</tr>
+
+  	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/notice-201920.jpeg" target="_blank">Notice for Integrated M Sc students admitted during 2019-20</a></td>
+</tr>
+<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/fee-structure-2020-21.pdf" target="_blank"> Institute Fee structure for A.Y. 2020-21</a></td>
+</tr>
+  	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/Notice for PhD students_COED.pdf" target="_blank">Instructions for PhD admission 2020-21 Regarding 10-11 August 2020 Document Verficiation, Written Test and Interview of Computer Engineering Department</a></td>
+</tr>
+
+<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/Refund Notice 2019-20.pdf" target="_blank">Refund Notice B.Tech.& M.Sc.-1 2019-20 </a>| <a href="../Data/Notice/2020/July/Refund Forms.pdf"> Refund Form
+</a></td>
+</tr>
+  		
+
+  	 <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/DOC072220-07222020151518.pdf" target="_blank">NOTICE: Commencement of Autumn (Odd) Semester of Academic Year 2020-21 in ONLINE MODE
+</a></td>
+</tr>
+
+    <tr>
+      <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://www.youth4work.com/onlinetalenttest">Online Skill Test</a></td>
+  </tr>
+
+
+
+      
+          <tr>
+                            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/AcademicRegulations2013-2014.pdf">Academic Rules & Regulation w.e.f. (2013-2014)</a></td>
+            
+          </tr>
+           <!-- <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/DOC071219-07122019100649.pdf" target="_blank"> Notice for submission of M. Tech. Dissertation
+</a></td>
+</tr> -->
+<!--  <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/BTECH-Minor-Degree.pdf" target="_blank">Application form for B. Tech. Minor Degree</a> | <a href="../Data/Notice/2020/July/NOTICE - Criteria for selection of B. Tech. minor degree.pdf" target="_blank">Selection Criteria</a> | <a href="../Data/Notice/2020/August/Courses_BTech_Minor_degree.pdf" target="_blank">Courses offered by Departments</a></td>
+</tr> -->
+<!-- <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/result_2020_21.php">Results of exams held during June/July 2020</a></td>
+</tr> -->
+          <!--          <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Ph. D. Comprehensive Exam Syllabus ACD.pdf" target="_blank">Comprehensive Exam Syllabus for Applied Chemistry Department</a></td>
+</tr> -->
+
+<!--   	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/comprehensive_exam_schedule.php">Online Ph.D. Comprehensive Exam and Viva Schedule</a></td>
+    </tr> -->
+    
+
+
+<!--   	<tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/eligible_candidate_PhD_july2020.php">List of eligible candidates for Ph D Admission</a></td>
+    </tr> -->
+<!--   	<tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/admission/2020-21/Revised-phd-mtech admission.pdf" target="_blank"> Revised - Schedule for on-line Ph.D. Admission Academic Year 2020-21 (Autumn Semester) (Updated on:- 13-07-2020)</a></td>
+</tr> -->
+<!--     <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/functional-(Unlock 2.0).pdf" target="_blank">Functional arrangements at SVNIT, Surat - Implementation of MHA Guidelines for Phased re - opening (Unlock - 2)</a></td>
+</tr> -->
+
+
+<!--     <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://svnit.ac.in/web/end-sem-july2020.php" target="_blank">End Semester Exam Schedule</a></td>
+</tr> -->
+
+<!-- 
+    <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/Notice for Final year B. Tech. and M.Sc. Students.pdf">Clearance of Academic Dues for Outgoing students of B. Tech. and M Sc</a></td>
+</tr> -->
+
+
+
+<!--     <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Students_NOTICE_48th senate Minutes.pdf" target="_blank">NOTICE for End Semester Examination in Online Mode (All years - except Final year) </a></td>
+</tr>
+ <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Library Dues Final Year Students.pdf" target="_blank">Library Dues of Outgoing Students of B. Tech. IV and M. Sc. Vth year</a></td>
+</tr>
+        <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Instruction-Final-B.Tech-M.Sc..pdf" target="_blank">Instruction to Final year B. Tech and Final Year M. Sc. Students</a></td>
+</tr> -->
+<!--          <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Minutes.pdf" target="_blank">Minutes of meeting with course coordinators of final year</a></td>
+</tr> -->
+<!--      <tr>
+  <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://svnit.ac.in/web/Syllabus.php" target="_blank">Course Materials for the Final Year Students</a></td>
+</tr>
+  
+
+
+     <tr>
+</tr> -->
+
+<!--     <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/DOC010120-01012020234345.pdf">Fees Related information for M. Tech. Students</a></td>
+            
+       </tr>
+ 
+    <tr>
+        <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/December/phd-mtech-notice-dec2019.pdf">
+Instruction to Newly Admitted Ph.D and M. Tech. (Research) Students Dec. 2019</a> </td>
+</tr> -->
+
+   
+
+           
+</table>
+</div>
+</div>
+          </marquee>
+          <a href="web/notice_events_tenders.php?tag=notice" class="right">read more...</a>
+        </div>
+      </div>
+      <div class="col l4 m4 s12  center-align">
+        <div class="card-panel blue-grey darken-4">
+          <span><b><a href="web/notice_events_tenders.php?tag=eventsnseminar" class="white-text">Events & Seminars (CCE)</a></b></span>
+        </div>
+        <div id="nt-2-container" class="nt-container">
+         <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+           <div class="container" style="width:94%";>
+ <div class="row center">
+  <table class = "bordered striped">
+     <tr> <td><a href="../Data/Notice/2021/January/ConfBNT.pdf">National Conference on Noise and Air Pollution On January 29-30, 2021</a></td>
+    </tr>
+    <tr> <td><a href="../Data/Notice/2021/January/STTP ETRITT_2021 Final corrected.pdf">Online Short Term Training Program(STTP)  on Emerging trends in Research and Innovation -Tips & Techniques  (ETRITT-2021) from 27-31 January 2021</a></td>
+    </tr>
+  	<tr> <td><a href="../Data/Notice/2021/January/BROCHURE_STTP AIR POLLUTION.pdf">TEQIP-III Sponsored One Week Short Term Training Program on Air Pollution: Sources, Control and Modelling during 15th – 19th February 2021</a></td>
+    </tr>
+  	<tr> <td><a href="../Data/Notice/2021/January/RM-IB-Revised.pdf">TEQIP III Sponsered 2nd Short Term Training Program (STTP) On Research Methodology: Tools and Techniques February 01- 05, 2021</a></td>
+    </tr>
+    <tr> <td> <tr> <td><a href="../Data/Notice/2020/December/ATAL AIM 2021 [Final version].pdf">AICTE Training and Learning (ATAL) Academy Sponsored Faculty Development Program on ADVANCES IN MANUFACTURING (AIM 3.0) during 4-8 January, 2021</a> | <a href="../Data/Notice/2021/January/Schedule AIM 3.0.pdf">Schedule</a></td>
+    </tr>
+  	<tr> <td><a href="../Data/Notice/2020/December/Flyer 60_Second Course_1-1-2.pdf">Short Term Training Programme (STTP) on 15 Days Self Finance STTP on Road Safety Audit and Other Road Safety Releated Aspects During 27th January - 10th February 2021</a></td>
+    </tr>
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/Hack2.jpg">Hackathon for all the students of SVNIT on Dec. 25, 2020</a> | <a href="https://incubateind.com/hack/svnit">Registration Form</a></td>
+    </tr> -->
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/HandsON.jpg">GitHub Hands on Workshop for all the students and faculties of SVNIT on Dec. 19, 2020 from 1pm to 2pm</a> | <a href="https://bit.ly/githubsvnit">Registration Form</a></td>
+    </tr> -->
+    <!-- <tr> <td><a href="../Data/Notice/2020/December/CFD STTP-Dec2020.pdf">One Week Online Short Term Training Programme (STTP) on Fundamentals and Modelling of CFD Part-I during 21-25 December, 2020 Organized by Mechanical Engineering Department</a></td>
+    </tr> -->
+    <tr> <td><a href="../Data/Notice/2020/December/Online FDP Brochure_Final_SVNIT_Surat_Upload_1582468176.pdf">ATAL Academy sponsored ONLINE faculty development program on "Reality based welding simulator: Significance, virtual training and industrial correlation" during 18-22 January 2021</a></td>
+    </tr>
+  	<tr> <td><a href="https://icsbmc2021.wixsite.com/mysite-3">Virtual International Conference on Sustainable Building Materials and Construction (ICSBMC-2021) 4th – 6th February, 2021 Organized by Civil Engineering Department, SVNIT, Surat</a></td>
+    </tr>
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/Brochure FCFF 2020.pdf">One Week Online Short Term Training Programme (STTP) on Fractional Calculus: Foundations to Frontiers (FCFF 2020) during December 28, 2020 – January 01, 2021</a></td>
+    </tr> -->
+   <!--  -->
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/7.3.Broucher.pdf">TEQIP – III sponsored one-week short term course on ‘Flow, Energy, and Combustion’ is going to be organized by Mechanicanical Engineering Department, SVNIT, Surat, from 21st to 25th December 2020</a></td>
+    </tr> -->
+    
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/Brochure ART GS 2020.pdf">TEQIP III sponsored Online STTP on Advance Research Topics in Geotechnical and Structural Engineering(ARTGS-2020) from 28th November 2020 to 2nd December 2020</a></td>
+    </tr> -->
+
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/Revised Pamphlet_CSPT2020.pdf">TEQIP III sponsored Online STTP on Cyber Security and Penetration Testing(CSPT 2020) from 28/12/2020 to 01/01/2021</a></td>
+    </tr> -->
+
+  	<!-- <tr> <td><a href="../Data/Notice/2020/December/Brochure_STTP_MADM_Dec 21-25, 2020.pdf">TEQIP III sponsored 2nd Short Term Training Programme (STTP) on "Multiple Attribute Decision Making and Its Industrial Applications" during December 21-25, 2020</a> | <a href="../Data/Notice/2020/December/Registration Form_STTP_MADM_Dec 21-25, 2020.pdf">Registration Form (online mode)</a></td>
+    </tr> -->
+
+    <tr> <td><a href="../Data/Notice/2020/November/Brochure STC Latex_ Jan 2021.pdf">One-Week Short Term Course on “Academic Writing using LATEX” 04-08 Jan, 2021</a></td>
+    </tr>
+  	<!-- <tr> <td><a href="../Data/Notice/2020/November/TEQIP_III_STTP_TMDD-2020_14-18 Dec 2020.pdf"> TEQIP (III) Sponsored National Level ONLINE STTP on Trends in Mechanical Design and Development-2020 from 14th to 18th December, 2020<font color="blue"> (Online Mode)</font></a></td>
+    </tr> -->
+
+    <tr> <td><a href="../Data/Notice/2020/November/TEQIP-III_STTP_BTIEA-2021_04-08 Jan 2021.pdf"> TEQIP (III) National Level STTP on 'Basics of Tribology and Its Industrial Engineering Applications (BTIEA)-2021 from 04th to 08 January, 2021(Online Mode)</a> | <a href="../Data/Notice/2021/January/Program Schedule_BTIEA_04 to 08 Jan 2021_NEW_Final.pdf">Schedule</a></td>
+    </tr>
+
+    <!-- <tr> <td><a href="../Data/Notice/2020/November/Broucher Women Empowerment final.pdf"> International Complaints Committee (ICC), Sardar Vallabhbhai national Institute of Technology, Surat, Organizes Online Poster Competition on Women Empowerment.</a><font color="red">The last date of submission of poster is extended upto 23rd November till 10:00 pm</font></td>
+    </tr> -->
+
+
+  <!-- 	<tr> <td>Two Days Virtual International Conference on Molecules to Materials (MTM - 2020) from 17th to 18th December, 2020 <a href="../Data/Notice/2020/November/Important link.pdf">Important Links</a> | <a href="https://moleculesmaterials.wixsite.com/mtm2020-registration"><font color="blue">Conference Website</font></a></td>
+    </tr> -->
+  	<!--  <tr> <td><a href="../Data/Notice/2020/November/Metro-Rail  STTP BrochureN.pdf"> TEQIP (III) Sponsored One Week STTP on "Metro-Rail Construction and Management ", 14-18 December 2020</font></a></td>
+    </tr>
+    <tr> <td><a href="../Data/Notice/2020/November/RM-IB_REvised-converted.pdf">TEQIP (III) Sponsored One Week STTP on Research Methodology: Tools and Techniques,  November 30- December 04, 2020 <font color="blue"> (Online Mode)</font></a></td>
+    </tr> -->
+  	<!-- <tr> <td><a href="../Data/Notice/2020/November/STTP_CTP-2020_SVNIT_extended.pdf">One week ONLINE short time training program (STTP) on 'Computational Tools for Physics (CTP-2020)' with major highlights in MATLAB, LabVIEW and Mathematica (23rd - 27th November, 2020) by Applied Physics Dept, SVNIT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">Extended Registration Deadline: November 20, 2020.</font></td>
+    </tr> -->
+  <!-- 	<tr> <td><a href="../Data/Notice/2020/October/STTP_Combustion_SVNIT.pdf">A short term training program (STTP) on "Combustion Concepts and Applications" for faculties, research scholars and PG students during 30th Nov to 4th Dec 2020</a></td>
+    </tr> -->
+  	<!-- 
+      <tr>  <td><a href="../Data/Notice/2020/October/STTP Brochure AGE 2020 (1).pdf"> TEQIP III sponsored Online SHORT-TERM TRAINING PROGRAM on Advances in Geotechnical Engineering (AGE - 2020) (19th – 23rd Nov, 2020)</a></td>
+    </tr> -->
+  	<!-- <tr>  <td><a href="../Data/Notice/2020/November/BTIoT-TEQIP-III-STTP-7-11 Dec 2020 Information Brochure.pdf"> TEQIP-III sponsored One Week Online Short Term Training Programme (STTP) on Blockchain Technology and Its Application in Internet of Things (BTIoT-2020) from 7th December to 11th December,2020</a>| <a href="../Data/Notice/2020/December/Selected Participants_STTP on BTIoT-2020.pdf"><font color="red"> List of Selected Participants</font></a></td>
+    </tr> -->
+  	<!-- <tr>  <td><a href="../Data/Notice/2020/October/Brochure_ML_final.pdf"> TEQIP sponsored 5 days Online Short Term Training Programme (STTP) on Recent Trends in Machine Learning: An Industry perspective, (Online Mode) from 8th November to 12th November 2020</a></td>
+    </tr>
+    <tr>  <td><a href="../Data/Notice/2020/October/Brochure_STTP_MADM_2-6 Nov 2020.pdf">TEQIP III sponsored One Week online STTP on "Multiple Attribute Decision Making and Its Industrial Applications" during November 02-06, 2020</a>  | <a href="../Data/Notice/2020/October/Registration Form_STTP_MADM_2-6 Nov 2020.pdf"> Registration Form</a></td>
+    </tr>
+    <tr>  <td><a href="../Data/Notice/2020/October/Final Brochure IC2S2TD-2020.pdf"> Virtual International Conference on Chemical Sciences in Sustainable Technology and Development (IC2S2TD-2020) From 1st - 3rd December, 2020</a> | <a href="../Data/Notice/2020/October/Flyer.pdf">Flyer</a></td>
+    </tr> -->
+  	<!-- <tr>  <td><a href="../Data/Notice/2020/October/Flyer_RSA_Certification_Course_SVNIT.pdf">15-Days Road Safety Auditors Certification Course (11-days online and 4-days participation “in person”) In Association with Ministry of Road Transport & Highways and Indian Roads Congress from 19th October - 3rd November, 2020</a>  | <a href="../Data/Notice/2020/October/Registration Form_RSA_SVNIT_Surat.pdf"> Registration Form</a>  | <a href="../Data/Notice/2020/October/Detailed_Schdule_RSA Course.xlsx">Detailed Schedule</a></td>
+    </tr>
+    <tr>  <td><a href="../Data/Notice/2020/October/Brochure_AATC-2020.pdf"> One Week Online Short Term Training Programme (STTP) on Advanced Analytical Techniques in Chemistry (AATC-2020) during Oct. 26-30th, 2020</a>  | <a href="https://forms.gle/ysnpFnxKf4NppxFz9"> Registration Form</a></td>
+    </tr> -->
+    <!-- <tr>  <td><a href="../Data/Notice/2020/October/Brochure_STTP_SVNIT.pdf">TEQUIP-III sponsored one week short term training program (Virtual mode) on "Thermal Management: An overview, Challenges, and Solutions” during November 2nd-7th, 2020</a></td>
+    </tr>
+  	<tr>  <td><a href="../Data/Notice/2020/October/Leaflet_STTP_2020_Final_ECED 5.pdf">online short term training programme (STTP) entitled Recent Trends in Optical Engineering (RTOE) from 19th - 23rd October, 2020</a></td>
+    </tr>
+    <tr>  <td><a href="../Data/Notice/2020/September/EMESA-2020 Final.pdf">Virtual International Workshop on  EMERGING MATERIALS FOR ENERGY STORAGE APPLICATIONS (EMESA-2020) from 26th - 30th  October, 2020</a>  | <a href="https://forms.gle/6nHT1LmtSc5TQx1t9"> Registration Form</a></td>
+    </tr> -->
+    <!-- <tr>  <td><a href="../Data/Notice/2020/September/DSP-TEQIP-STTP-26-30 Oct 2020 Brochure.pdf">TEQIP-III Sponsored One Week ONLINE Short Term Training Programme (STTP) On Data Security and Privacy (DSP 2020) 26th to 30th October, 2020 </a> | <a href="../Data/Notice/2020/October/Selected Participants_STTP on Data Security and Privacy 2020.pdf">Selected Participant List </a></td>
+    </tr> 
+    <tr>  <td><a href="../Data/Notice/2020/September/STTP Brochure October 2020.pdf"> Online Short Term Training Programme (STTP) ON Computational Software, (MATLAB & MATHEMATICA) 05-09 Oct, 2020 </a></td>
+    </tr> 
+    <tr>  <td><a href="https://icogecao.wixsite.com/icogecao"> TEQIP-III sponsored 2nd International Conference on “Gender Equity: Challenges and Opportunities (ICOGECAO-2020) (Virtual mode)”, From 25th to 27th November 2020 </a> | <a href="../Data/Notice/2020/September/GenderEquityLink_SVNIT VM EED.pdf"> View PDF</a> | The New submission date is 25th October 2020</td>
+    </tr> 
+    <tr>  <td><a href="https://bit.ly/3kpW6OD"> A TEQIP 3 sponsored STTP on Emerging Trends in Speech and Biomedical Signal Processing from 23 Sep - 27 Sep 2020</a></td>
+    </tr>   
+    <tr>  <td><a href="../Data/Notice/2020/September/Recent Trends in RF Technology for 5G and IoT.pdf">TEQIP III sponsored One Week online Short Term Training Program (STTP) on Recent trends in RF Technology for 5G and IoT on October 12th - 16th, 2020</a></td>
+    </tr>
+  	<tr>  <td><a href="../Data/Notice/2020/September/STTPon occupational safety covid-19 Brochure.pdf">TEQIP III sponsored One Week Short Term Training Program (STTP) on Occupational Safety and Health Management Special Emphasis on Covid-19 on 21st September 2020 to 25th September 2020</a></td>
+    </tr> -->
+
+  	<!-- <tr>  <td><a href="../Data/Notice/2020/September/PECD Brochure.pdf">One Week Short Term Training Program (Online) on Power Electronic Converters and Drives: Fundamentals, Implementation and Applications(03rd October 2020 to 07th October 2020</a></td>
+    </tr>
+  	<tr>  <td><a href="../Data/Notice/2020/September/Brochure_Modern Materials and Manufacturing.pdf">TEQIP III sponsored One Week Online Short-Term Training Program on “Modern Materials and Manufacturing” (12-18th October 2020)</a></td>
+    </tr>
+    <tr>  <td><a href="https://bit.ly/32Q3yLO"> Online TEQIP -III sponsored Short Term Training Program (STTP) on Emerging Trends in VLSI Design during 12 Sep – 16 Sep, 2020</a></td>
+    </tr>
+    <tr>  <td><a href="../Data/Notice/2020/September/STTP_AIM 2.0_2020_Brochure.pdf">Second STTP on "ADVANCES IN MANUFACTURING" during October 5th - 9th, 2020</a> | <a href="../Data/Notice/2020/October/SVNIT_MED_AIM2.0.pdf">Schedule</a></td>
+    </tr>
+  	 <tr>  <td><a href="../Data/Notice/2020/August/2020-08-12 FDP Brochure Textile Engg SVNITF.pdf">AICTE Training and Learning (ATAL) Academy Sponsored Faculty Development Program on Green and Sustainability in Textile Industry during 21st – 25th September,2020</a></td>
+  	</tr>
+ -->
+      <!--   <tr>
+  <td><a href="../Data/Notice/2020/August/ACSEA_Brochure.pdf">TEQIP (III) Sponspred one week online short term course on "Advances in Control Systems Engineering and Applications" organized by the Electrical Engineering Department from 23rd September to 27th September 2020.</a> | <a href="https://forms.gle/Rzr6t6Fa9DHwc75J6">Registration Form </a></td>
+  </tr>
+
+    <tr>  <td><a href="../Data/Notice/2020/August/Brochure.pdf">Technical Education Quality Improvement Program - III
+Sponsored ORGANIZING COMMITTEE One Week Online Short Term Training Program on “Fundamentals and Applications of CFD” (September 07-13, 2020) organized by Mechanical Engg. Department, SVNIT, Surat</a></td>
+  </tr>
+    <tr>  <td><a href="../Data/Notice/2020/August/APECS2020_Sept18-22.pdf">TEQIP (III) Sponsored One Week Online Short Term Course on  "Applications of Power Electronic Converters for Sustainable Living" during 18-22 September, 2020</a> | <a href="https://forms.gle/PLs96GMDeUWAdj38A"> Registration Form </a> </td>
+  </tr>
+    <tr>  <td><a href="../Data/Notice/2020/August/FDP_Green Technology Towards Sustainable Future-ChED.pdf">AICTE Training and Learning (ATAL) Academy
+Sponsored ONLINE Faculty Development Program on GREEN TECHNOLOGY TOWARDS SUSTAINABLE FUTURE 26th – 30th October2020</a></td>
+  </tr> -->
+ <!--  	<tr>
+  <td><a href="../Data/Notice/2020/August/Heritage STTP Poster 13082020.pdf">TEQIP Sponsored one Week Virtual STTP on Urban Heritage Conversation: Issues and Challenges during  31st August - 04th September 2020.</a></td>
+  </tr> -->
+<!-- 
+  	<tr>
+  <td><a href="../Data/Notice/2020/August/AEOTIT-Call for Participation.pdf">One-Week Short-Term Training Program on Advanced Engineering Optimization Through Intelligent Techniques (Online) during 01 - 05 September 2020.</a></td>
+  </tr> -->
+
+<!--   	<tr>
+  <td><a href="../Data/Notice/2020/July/FDP Brochure_BLFC_SVNIT_Surat_VDK_Final_Upload.pdf">AICTE Training and Learning (ATAL) Academy sponsored ONLINE Faculty Development Program on “Blended Learning and Flipped Classrooms” during 10-14 August 2020.</a></td>
+  </tr>
+ -->
+  <!-- 	<tr>
+  <td><a href="../Data/Notice/2020/July/Webinar_Khushboo.jpg">A Webniar on Inspiring Engineering Innovation on 28th July 2020</a> | <a href="https://forms.gle/9gTLVMUEt5t2ULRw8">Registration Form </a></td>
+  </tr> -->
+
+<!--     <tr>
+  <td><a href="../Data/Notice/2020/July/CPEC_SVNIT_2020.pdf">One-week short term course on "Control of Power Electronic converters for on Grid and off Grid systems" organized by the Electrical Engineering Department from 3rd August to 7th August 2020</a> | <a href="https://forms.gle/CLVqpdnCqLmjeDHb9">Registration Form</a></td>
+  </tr>
+ -->  	<!-- <tr>
+  <td><a href="../Data/Notice/2020/June/STTP-Brochure 27-31 July  2020.pdf">TEQIP-III Sponsored One-Week Short-Term Training Programme (online mode) on An approach for water conservation and management for sustainability during July 27-31, 2020</a></td>
+  </tr> -->
+<!--   	 <tr>
+  <td><a href="../Data/Notice/2020/June/Brochure.pdf">TEQIP-III Sponsored STTP (Online) on “Design of Water Related Infrastructures for Smart City” during July 27 - 31, 2020</a> | <a href="../Data/Notice/2020/July/list-smartcity.pdf">List of selected Participants</a></td>
+  </tr> -->
+<!--     <tr>
+  <td><a href="../Data/Notice/2020/June/Revised Intl. Conf._ICRADM_ 2020_22 Jun 2020.pdf"> Online Conduction of ICRADM-2020 on 16-17 July 2020</a> | <a href="../Data/Notice/2020/July/Programme Schedule of ICRADM_2020 on 16th-17th July 2020.pdf">Programme Schedule</a> | <a href="../Data/Notice/2020/July/Speaker ICRADM2020.pdf">Keynote Speaker details</a></td>
+  </tr> -->
+<!-- <tr>
+  <td><a href="../Data/Notice/2020/June/Pamphlet_RT-IoTCC2020.pdf"> TEQIP (III) Sponsored ONLINE Five-days Short Term Training Programme (STTP) On Recent Trends in IoTs and Cloud Computing (RT-IoTCC 2020) from June 29 – July 03, 2020</a></td>
+  </tr> -->
+  <!-- 	<tr>
+  <td><a href="../Data/Notice/2020/June/STTP-Brochure 22-26 June 2020.pdf"> One-Week Short-Term Training Programme (online mode) on Waste Management Techniques with Special Attention to COVID-19 Waste 22-26 June, 2020 Under TECHNICAL EDUCATION QUALITY IMPROVEMENT PROGRAM (TEQIP-III)</a> | <a href="../Data/Notice/2020/June/Programme schedule 22-26 June 2020 Website.pdf">Schedule</a> | <font color="red"> All the students B. Tech., M. Tech., MSc, BSc, etc are permitted to attened the training program after filling the registration form. </font></td>
+  </tr> -->
+
+
+  <!-- 	<tr>
+  <td><a href="../Data/Notice/2020/April/Online FDP   Brochure_Upload_VDK_MED_SVNIT_Surat.pdf"> AICTE Training and Learning (ATAL) Academy sponsored ONLINE faculty development program during 18-22 May 2020</a></td>
+  </tr> -->
+     
+  <!--    <tr>
+  <td><a href="../Data/Notice/2020/March/gian.pdf">  GIAN course brochure .GIAN course on Spatial Analysis for Water Resources Modelling and Management by Dr. Ramesh Teegavarapu(Dr T.),Professor, FAU,Florida,USA and Dr S M Yadav, Professor, CED, SVNIT,Surat scheduled from Dec.7-11,2020 at Civil Engineering Department,SVNIT,Surat.</a></td>
+  </tr> -->
+ 	<!-- <tr>
+  <td><a href="../Data/Notice/2020/March/report-ACSTES-2020.pdf"> Report of One Day National Conference on 'Advances in Chemical Sciences and Technology for Environment and Sustainability' (ACSTES-2020), held on 27th February 2020, organized by Applied Chemistry Department, SVNIT, Surat</a></td>
+  </tr> -->
+<!--   	<tr>
+  <td><a href="../Data/Notice/2020/June/STTP MMSPS_2020 Final.pdf">One week Online Short Term Training Programme (STTP) on Mathematical Modelling and Simulations in Physical Science (MMSPS-2020) from 29 June – 3 July 2020</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLScgtnxUZmujV8ua40kG6V3UXGAW3CfXVkXyj1JZQ4mlIIWpkg/viewform">Registration Form</a> </td>
+  </tr>
+ -->
+  <!--   <tr>
+  <td><a href="../Data/Notice/2020/February/SVNIT_MED_RAM2020.pdf"> International conference on "Recent Advances in Manufacturing (RAM 2020) during 03-05 July, 2020</a></td>
+  </tr> -->
+<!-- <tr>
+  <td><a href="../Data/Notice/2020/March/sttp cube 02032020.pdf"> STTP on "Travel Demand Modelling Using Cube Software" from 13th – 17th April 2020. SVNIT, Surat</a></td>
+  </tr> -->
+
+
+  	<!-- <tr>
+	<td><a href="../Data/Notice/2020/February/PIASD 2020_2-6 March  2020_Ched.pdf">TEQIP-III Sponsored STTP on Process Intensification Approach towards Sustainable Development 02nd – 06th March 2020. SVNIT, Surat</a></td>
+  </tr> -->
+ <!-- 
+       <td><a href="../Data/Notice/2020/January/ACSTES2020-Reg.pdf">One Day National Conference on 'Advances in Chemical Sciences and Technology for Environment and Sustainability' (ACSTES - 2020) to be held on 27th February 2020, Thursday, organized by Applied Chemistry Department, SVNIT, Surat.....</a> | <a href="../Data/Notice/2020/February/Technical%20Programme%20Schedule%20-%20ACSTES%20-%202020.pdf">Technical Programme Schedule</a> | <a href="../Data/Notice/2020/February/Invitation%20for%20Inaugural%20Function,%20ACSTES%20-2020,%20SVNIT,%20Surat.pdf">Invitation for Inaugural Function</a></td>
+  </tr> -->
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/December/11. TEQIP-III Sponsored STTP Brochure.pdf ">One week short term training course to be organised by Applied Mechanics Department during 25/12/2019 and 29/12/2019</a></td>
+  </tr> -->
+<!--   <tr>
+        <td><a href="../Data/Notice/2020/February/EED_ONE WEEK SHORT TERM COURSE ON  PEDG&ED_2.pdf">TEQIP (III) sponsored ONE WEEK SHORT TERM COURSE ON "Power Electronics for Distributed Generation and Electrical Drives” from 2nd March  2020 to 06th March 2020 at Electrical Engineering Department, SVNIT, Surat</a> | <a href="../Data/Notice/2020/February/List-Participants_PEDGED_2-6-March.pdf">List of participant</a></td>
+  </tr> -->
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/December/RTEE2020-FINAL.pdf">TEQIP-III Sponsored one week short term training programme (STTP) on "Recent Trends in Energy and Environment" from 6th January 2020 to 10th January 2020</a></td>
+  </tr> -->
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2019/December/MATLAB-2020.pdf">TEQIP-III Sponsored One-Week Short Term Training Programme (STTP) OnMATLAB
+and Its Applications in Engineering and Computational Research (MATECR-2020) 17th - 21st February, 2020</a></td>
+  </tr> -->
+  <!-- <tr>
+        <td><a href="../Data/Notice/2019/October/GE2.pdf">TEQIP-III Sponsored International Conference On “Gender Equity: Challenges And Opportunities”, on 19 & 20 December 2019, at Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat....Extended Date: 30th October, 2019.</a> | <a href="http://icogecao.wixsite.com/icogecao"> Visit this link</a> | <a href="../Data/Notice/2019/October/ICOGECAO_2019.pdf"> Registration Details and Form </a> | <a href="../Data/Notice/2019/December/ICOGECAO-2019.pdf">Schedule</a>
+        </td>
+     </tr> -->
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2019/December/AMPD2020 Brochure.pdf">TEQIP III Sponsored National Conference on ADVANCES IN MATERIALS AND PRODUCT DESIGN 4th AMPD 2020 14 - 15 March 2020</a> | <a href="../Data/Notice/2019/December/AMPD2020 Template.docx">Paper Template</a></td>
+  </tr> -->
+<!-- 
+  	<tr>
+        <td><a href="../Data/Notice/2020/January/Road Safety Audit_2.pdf">Call for Participation Short Term Training Programme On
+“ROAD SAFETY AUDIT AND ITS RELATED ASPECTS" 20th Jan - 05th Feb – 2020 (15 days) Organized by Transportation, Engineering and Planning Division
+Department of Civil Engineering Sardar Vallabhbhai National Institute of Technology, Surat</a></td>
+  </tr> -->
+  	 <!-- <tr>
+        <td><a href="../Data/Notice/2020/February/ICRADM.pdf">TEQIP III Sponsored 1st International Conference On Recent Advancements in Design and Manufacturing 17th- 18th April 2020</a> | <a href="../Data/Notice/2019/December/2-ICRADM-2020_Paper  Template.docx">Paper Template</a> | <font color="red"> Accepted Research Papers will be published in IOP Conference Series: MSE / IJMPERD / IOSR-JEN  | Full Paper Submission has been closed on 20 Mar 2020</font> || <font color="red">"ICRADM-2020 is postponed till further notice due to COVID-19 outbreak".</font></td>
+  </tr> -->
+
+   <!--  <tr>
+        <td><a href="../Data/Notice/2019/November/DIP-2019-Brocure.pdf">TEQIP-III Sponsored One-Week Short Term Training Programme
+(STTP) On Document Image Processing (DIP-2019) 23rd December – 27th December, 2019</a></td>
+  </tr> -->
+    <!-- <tr>
+        <td><a href="../Data/Notice/2019/November/ComputationalHeat-MassTransfer.pdf">3rd One week STTP on Recent Advances on Computational Heat and Mass Transfer during 16-20 December-2019</a></td>
+  </tr> -->
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2020/January/BTIEA-2020.pdf">TEQIP III Sponsored National Level STTP on "2nd Basics of Tribology and Its Industrial Engineering Applications (BTIEA - 2020)" March 16 - 20, 2020</a></td>
+  </tr> -->
+  <!-- <tr>
+        <td><a href="../Data/Notice/2019/December/NAP-2019_ Brochure_Revised_March-2020.pdf">A National Conference on Noise and Air Pollution (NAP) is postponed to 26 - 27 March 2020.</a> | <a href="../Data/Notice/2019/september/NAP2019_PaperTemplate.doc">Paper Template</a>
+        </td>
+     </tr>
+ -->
+<!--     <tr>
+        <td><a href="../Data/Notice/2019/October/CCDF.pdf">ISEA-II sponsored One day workshop On Cyber Crime and Digital Forensics (CCDF 2019) on 23rd Nov 2019</a> | <a href="../Data/Notice/2019/November/DOC131119-13112019152928.pdf">List of Participants</a></td>
+  </tr> -->
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2019/October/new broucher_AGNSS.pdf">TEQIP-III Sponsored One Week Short Term Training Program on “ADVANCED GNSS” 3-7 DECEMBER 2019</a> | <a href="../Data/Notice/2019/November/participants list.pdf">List of Participants</a></td>
+  </tr> -->
+<!-- 
+  	<tr>
+        <td><a href="../Data/Notice/2019/November/STTP_AIM_SVNIT_Revised brochure.pdf">TEQIP - III sponsored STTP on Advances in Manufacturing (AIM2020) during 21-25 January, 2020</a></td>
+  </tr> -->
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2019/October/MXROAD.pdf">One week workshop on TRAINING CUM WORKSHOP ON MX ROAD SOFTWARE IN HIGHWAY DESIGN PROGRAM on Dates: Dec 25th to Dec 29th, 2019 at Civil Engineering Department, SVNIT, Surat</a></td>
+  </tr> -->
+    <!-- <tr>
+        <td><a href="../Data/Notice/2019/October/STTP Broucher.pdf">STTP on "Design, Modeling and Simulation of Advanced Composite Structures Using FEM Softwares (MATLAB, ABAQUS and ANSYS)" From 09 to 13 Dec-2019 Under TEQIP-III.</a></td>
+  </tr> -->
+
+  <!-- 	<tr>
+        <td><a href="../Data/Notice/2019/October/9_Drafting_Modeling_oct2019.pdf">STTP on "Engineering Design Using Drafting and 3D-modeling " From 9 to 13 Nov.-2019. Organized by Anchor Institute Cell SVNIT.</a></td>
+	</tr> -->
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/October/Computational_Heat_MassTransfer.pdf">3rd One week STTP on Recent Advances on Computational Heat and Mass Transfer during 16-20 December-2019</a></td>
+	</tr> -->
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/October/Programme 23 to 27 Dec2019.pdf">One Week Short Term Training Programme on "Mathematical Modelling and Simulation for Researchers, Engineers and Scientists (MMSRES)" to be held during 23rd to 27th December, 2019.</a></td>
+	</tr> -->
+
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/October/AEOTIT-Call-for-Participation.pdf">20th One-Week STTP on Advanced Engineering Optimization Through Intelligent Techniques During 25-29 November 2019</a></td>
+	</tr> -->
+  	<!-- <tr>
+        <td><a href="https://icie2019.com/">5th International Conference on Industrial Engineering (ICIE- 2019) & 61st National Convention of IIIE (Submission extended till October 08th, 2019)</a></td>
+	</tr> -->
+
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/september/AMPD2019_Brochure.pdf">TEQIP-III Sponsored National Conference on ADVANCES IN MATERIALS AND PRODUCT DESIGN 4th AMPD 2019 on 28-29 December 2019 at SVNIT, Surat</a> | <a href="../Data/Notice/2019/september/AMPD2019 Template.docx"> Brochure</td>
+	</tr> -->
+  	<!-- <tr>
+        <td><a href="../Data/Notice/2019/september/FDP- FEMA 2019.pdf">One-week AICTE Training and Learning (ATAL) Academy sponsored faculty development program on “Fundamentals of Energy Management and Applications (FEMA-2019)” November 25 - 29, 2019.</a></td>
+	</tr>
+
+    <tr>
+        <td><a href="../Data/Notice/2019/september/FDP Brochure_SVNIT_VDK.pdf">AICTE Training and Learning (ATAL) Academy sponsored faculty development program on “Reality based welding simulator: Significance, hands on training and industrial correlation” during 23-27 December, 2019 at Mechanical Engineering Department.</a></td>
+	</tr>
+    <tr>
+        <td><a href="../Data/Notice/2019/september/Control_and_Instrumentation_december 2019.pdf">TEQIP-III Sponsored A Short Term Training Program (STTP) On Advances in Control and Instrumentation Education and Implementations on 09-13 Dec.2019</a></td>
+</tr>
+<tr>
+        <td><a href="../Data/Notice/2019/september/IGC2019_Brochure.pdf">Conference on “Indian Geotechnical Conference-2019” on 19-21 Dec.2019</a></td>
+</tr> -->
+<!-- <tr>
+        <td><a href="../Data/Notice/2019/september/SVNIT_RE.pdf">Faculty Development Program under ATAL Academies Programme on REVERSE ENGINEERING FOR PRODUCT DESIGN at Mechanical Engineering Department, SVNIT, Surat</a></td>
+</tr>
+
+<tr>
+        <td><a href="../Data/Notice/2019/DOEANN_Brochure_August_2019.pdf">Faculty Development Program under ATAL Academies Programme on Design of Experiment & Artificial Neural Network at Chemical Engineering Department, SVNIT, Surat</a></td>
+</tr> -->
+
+<!-- <tr>
+        <td><a href="../Data/Notice/2019/November/SVNIT_ATAL_HKD_FDP_3DP_revised brochure.pdf">AICTE - ATAL sponsored FDP on "3D Printing & Design" during 30/12/19 to 03/01/20</a></td>
+</tr>
+
+<tr>
+        <td><a href="../Data/Notice/2019/RASE-2019_Brochure_August 8th_2019.pdf">Faculty Development Program(AICTE ATAL) on Recent Advances in Structural Engineering (RASE) 18th - 22nd November, 2019</a></td>
+     </tr>
+
+
+
+  	<tr>
+        <td><a href="../Data/Notice/2019/CFP_AVES 2019.pdf">TEQIP-III Sponsored International Conference (Springer) on "Advances in
+VLSI and Embedded Systems"(AVES-2019)on December 20-21,2019 at SVNIT, Surat</a></td>
+     </tr>
+  	<tr>
+        <td><a href="../Data/Notice/2019/ATAL_ACADEMY_CELL_STTP.pdf">ATAL ACADEMY CELL, NEW DELHI Sponsored Short Term Training Programme on "ADVANCES IN FLOOD MODELING"  9th to 13th December, 2019 at Civil Engineering Department, SVNIT, Surat</a>        </td>
+     </tr> -->
+  	<!-- <tr>
+        <td><a href="http://www.et2ecn2020.org/">TEQIP-III Sponsored "3rd INTERNATIONAL CONFERENCE on EMERGING TECHNOLOGY TRENDS in ELECTRONICS COMMUNICATION and NETWORKING 2020 (ET2ECN-2020) on 7-8 February 2020 at Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</a> <a href="../Data/Notice/2019/Call for Papers.pdf"><font color="red"> Call for Papers </font></a>
+        </td>
+     </tr> -->
+      
+
+</table>
+</div>
+</div>
+        </marquee>
+          <a href="web/notice_events_tenders.php?tag=eventsnseminar" class="right">read more...</a>
+        </div>
+      </div>
+      <div class="col l4 m4 s12  center-align">
+        <div class="card-panel  blue-grey darken-4">
+          <span class="white-text "><b><a href="web/notice_events_tenders.php?tag=tenders" class="white-text">Tenders & Enquiries</a></b></span>
+        </div>
+        <div id="nt-3-container" class="nt-container">
+          <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+          <div class="container" style="width: 94%";>
+ <div class="row center">
+  <table class = "bordered striped">
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2021/January/Institute Website Notice.pdf">Tender for Cleaning the Underground Water Sump with Chemical Treatment in SVNIT Campus, Surat </a></td>
+    </tr>
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2021/January/AMC_for_CCTV_Camera_system_EED.pdf">Enquiry for Supply of Annual Maintenance Contract(AMC) of CCTV Camera System Installed at Electrical Engineering Department ( Both New & Old Building)</a></td>
+    </tr>
+      <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata/byVXk0Z1ZpNGdUbUYwYVc5dVlXd2dTVzV6ZEdsMGRYUmxJRzltSUZSbFkyaHViMnh2WjNrdFUzVnlZWFE9QTEzaDFjMlZzWldOMEExM2gxY0hWaWJHbHphR1ZrWDJSaGRHVT1BMTNoMQ==" target="_blank">Tender for  "PROVIDING COMPREHENSIVE ANNUAL MAINTENANCE SERVICES FOR COMPUTERS, LAPTOPS, HIGH END COMPUTERS (SERVERS), PRINTERS & PERIPHERALS AT SVNIT, SURAT".</td>
+    </tr>
+ 
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Enquiry for Supply of Taxi Services for Local Visit for RSA-2020 Certification Course.pdf">Enquiry for Supply of Taxi Services for Local Visit at SVNIT Campus, Surat</a> | <a href="../Data/Notice/2020/October/Corrigendum for Taxi Services Enquiry.pdf">Corrigendum</a></td>
+    </tr>
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-58.pdf">Miscellaneous Plumbing and Toilet Sunk Waterproofing work at Narmad Bhavan and Sarabhai Bhavan at SVNIT Campus, Surat</a>  | <a href="../Data/Notice/2020/November/Corrigendum-T-58.pdf">Corrigendum</a></td>
+    </tr>
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/4E2-14102020.pdf">Enquiry for G. I. Roofing Work on Stair Cabin of Central Computer Centre at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/November/Corrigendum4E.jpeg">Corrigendum</a></td>
+    </tr>
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/4E1-14102020.pdf">Enquiry for Foundation Platform work for Machine of FMHM lab of Mechanical Engineering Department at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/November/Corrigendum4E.jpeg">Corrigendum</a></td> -->
+    </tr>
+     <!--   <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/November/Enquiry_supply_of_experimental_kits.pdf">Enquiry for Supply of Lab. Experiments Kits at SVNIT, Surat</td>
+    </tr>
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Auction of Subabul in SVNIT Campus..pdf">Auction of Subabul Trees in SVNIT Campus</td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-56.pdf">Enquiry for Repair and Rehabilitation of C-type (C-VIII Building) quarters at SVNIT, Surat.</a></td>
+    </tr>
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-55.pdf">Enquiry for Chemical Treatment Work on External Wall for Seepage Repairing at V-type Staff Quarters from 4th Floor to Terrace Floor of 2nd and 3rd Wings at SVNIT Campus, Surat.</a></td>
+    </tr>
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-54.pdf">Enquiry for Walkway towards Administrative Building to backside gate of Hostel-12 and Director Bunglow and between Testing Lab of Civil Engineering Department and New Production Section at SVNIT Campus, Surat.</a></td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-53.pdf">Enquiry for Renovation work in Solid Waste Lab at Old CRC, SVNIT Campus, Surat.</td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-52.pdf">Enquiry for Bird Net Fixing to Balconies and Passage Opening and Replacement of Fibre Sheet at Terrace for All O.T.S. Opening with Painting to Fabrication of Roof and Staircase at New Guest House, SVNIT Campus, Surat.</td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/October/Institute Website Notice-51.pdf">Enquiry for Chemical Treatment work for Seepage Prevention from External Wall at Various Building at SVNIT Campus, Surat.</td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/IBM Enquiry 2020.pdf">Enquiry for providing IBM Blade Server HS21 and IBM Blade Server H Unit with back to back support from IBM / LENOVA at SVNIT, Surat for the period of one year </a> | <a href="https://eprocure.gov.in/epublish/app?page=Home&service=page">CPPP link</a> | <a href="../Data/Notice/2020/October/Corrigendum-IBM.pdf">Corrigendum</a></td>
+    </tr>
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/SVNIT Web of Shifting & New Intercom Connections EPABX.pdf">Tender document for “(I)Redressing / Shifting work of existing main Karel DS 200 EPABX system installed at administrative building to old electrical engineering department at SVNIT campus, Surat (II)Supply and Installation work of intercom facilities in new academic buildings (APD, ACD, AMHD, COED, ECED, CHED, EED, Central Library, MED-PG, CED-ARC) and new residence quarters (Tower-A, Tower-B and 9 Hostels) at SVNIT campus, Suratat SVNIT, Surat</a> | <a href="https://eprocure.gov.in/epublish/app">CPPP link</a> | <a href="../Data/Notice/2020/October/Corrigendum EPABX(1).pdf">Corrigendum 1 </a> </td>
+    </tr>
+     <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/September/4. Institute Website Notice (2) (2).pdf">Annual Rate Contract for Supply of Plumbing and Carpentry Items at SVNIT, Surat</a> | <a href="../Data/Notice/2020/September/corrigendum.pdf">Corrigendum</a></td>
+    </tr>
+  	 <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/Services of Counseling and Guidance SVNIT web - Copy Store.pdf">Tender for Providing Services of Counseling and Guidance by Experts for Students of SVNIT, Surat</a> | <a href="../Data/Notice/2020/September/Corringedum of Date Formate- website.pdf">Corrigendum</a> </td>
+    </tr> -->
+
+  	  <!--   <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/August/SVNIT web -CCC_water_circulation_system.pdf">Tender for Comprehensive Maintenance Contract for Equipments of Water Circulation System in the Advanced Hydraulic Laboratory in Civil Engineering Department at SVNIT Campus, Surat</a> | <a href="../Data/Notice/2020/September/Corrigendum (1).pdf">Corrigendum</a></td>
+    </tr> -->
+
+      <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata/byVXk0Z1ZpNGdUbUYwYVc5dVlXd2dTVzV6ZEdsMGRYUmxJRzltSUZSbFkyaHViMnh2WjNrdFUzVnlZWFE9QTEzaDFjMlZzWldOMEExM2gxY0hWaWJHbHphR1ZrWDJSaGRHVT1BMTNoMQ==">Enquiry for providing AMC for IBM Blade Centre H Unit with Back to Back support from IBM/LENOVA at SVNIT, Surat</a></td>
+     </tr> -->
+
+	<!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app">Enquiry for Providing Annual Maintenance Contract for Uninterrupted Power Supply (UPS), Stabilizers, etc. at SVNIT, Surat</a> </td>
+    </tr> -->
+
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/July/Hybrid plasma gasifier.pdf">Tender for Hybrid Plasma Gasifier for MSW in Mechanical Engineering Department at SVNIT Campus , Surat</a></td>
+    </tr> -->
+
+ <!--    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/CCC - Upload copy.pdf">Tender for Comprehensive Maintenance Contract for Equipments of Water Circulation System in the Advanced Hydraulic Laboratory in Civil Engineering Department at SVNIT Campus , Surat</a></td>
+    </tr>
+    -->
+  	 <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Institute Website Notice-41.pdf">Civil Work Tenders on Water Proofing work on Part Terrace of New Class Room Complex with Chemical Treatment in SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/July/Corrigendum-T-41.pdf">Corrigendum</a></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Institute Website Notice-42.pdf">Civil Work Tenders on Repairing, Colour and Alluminium Partition Work at 6th Floor Class Rooms of New CRC (for T & P Section) in SVNIT Campus, Surat. </a> | --> <!-- <a href="../Data/Notice/2020/July/Corrigendum-T-42.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/July/Corrigendum-T-42new.pdf">Corrigendum</a></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/01E11062020.pdf">Enquiry tender for  Foundation Platform work for Machine of FMHM lab of Mechanical Engineering Department at SVNIT Campus, Surat</a> | --> <!-- <a href="../Data/Notice/2020/July/Corrigendum-E0106072020.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/July/Corrigendum-E01.pdf">Corrigendum</a></td>
+    </tr> -->
+<!--   	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app">Tender Document For Providing Annual Maintenance Services for Network Equipments, Active and Passive Components etc. at SVNIT, Surat</a> | <a href="../Data/Notice/2020/July/corrigendum-network.pdf">Corrigendum</td>
+    </tr> -->
+<!--     <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app">Tender Document For Providing 128 mbps(1:1) Internet Services at SVNIT, Surat</td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Enquiry for field work Mar2020.pdf">Enquiry for field work of Geotechnical Testing, SVNIT, Surat </a></td>
+    </tr> -->
+
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Enquiry of UV Water purifier.pdf ">An Enquiry for Aquaguard Water Purifier (AG 600 DF) in Raman Bhavan Hostel, SVNIT, Surat </a></td>
+    </tr> -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Food-Canteen.16.03.20.pdf ">Tender Document for Running Food Canteen at SVNIT, Surat on 16.03.2020</a> | --> <!-- <a href="../Data/Notice/2020/April/New Doc 2020-04-03Corrigendum-canteen.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/April/Corrigendum-canteen.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/May/Corrigendum-canteen.doc">Corrigendum Cancellation</a></td>
+    </tr> -->
+     <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/June/Enquiry_CED.pdf">Enquiry for field work of Geotechnical Testing at Civil Engineering Department,SVNIT, Surat.</a> | <a href="../Data/Notice/2020/July/Enquiry CED.pdf">Extended due date</a></td>
+    </tr> -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/26E114032020.pdf">Civil Work Inquiries for Paver Block work at Parking area of Workshop in SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/June/Corrigendum-E-23-03.pdf">Corrigendum</a></td>
+    </tr>
+ -->   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/26E214032020.pdf">Civil Work Inquiries for Creating New Entry for Dining Hall from Passage in New Guest House Opp. SVNIT Campus, Surat.</a> |  <a href="../Data/Notice/2020/June/Corrigendum-E-23-03.pdf">Corrigendum</a></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/26E314032020.pdf">Civil Work Inquiries for Door Closers Fixing work at New Computer Engineering and New Electronics Engineering Departments in SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/June/Corrigendum-E-23-03.pdf">Corrigendum</a></td>
+    </tr> -->
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/SVNIT website.pdf">Tender To operate Stationary Cum Reprography Store.</a>  | <a href="../Data/Notice/2020/May/26-5 Corrigendam  (CPPP Portal).pdf">Corrigendum</a></td>
+    </tr>  -->
+    
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Institute Website Notice-35.pdf">Tender for Providing and Fixing Mosquito net in Gajjar Bhavan (Hostel-4) at SVNIT, Surat.</a>  | <a href="../Data/Notice/2020/May/Corrigendum-T-35.pdf">Corrigendum</a></td>
+    </tr>  -->
+
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Institute Website Notice-34.pdf">Tender for Water Proofing work (With Chemical Treatment) on Terrace of Central Computer Centre in SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/May/Corrigendum-T-34.pdf">Corrigendum</a></td>
+    </tr>  -->
+
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Institute Website Notice-33.pdf">Tender for Replacement of Old Damaged Rain Water Gutter (Parnal) and Polycarbonate Sheet Fixing work on Roof of S.M. Lab, F.M. Lab, I.C. Engine Lab, and Boiler Lab, at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/May/Corrigendum-T-33.pdf">Corrigendum</a></td>
+    </tr>  -->
+
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Enquiry for HDMI Cable at New CRC.pdf">Enquiry for supply of HDMI Cable For Hitachi Projectros</a></td>
+    </tr>  -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/Short Enquiry for Repairy and  Maintenance of Children Park Amenities.pdf">Short Term Enquiry Tender for Repairing, Maintenance and Colouring work of Children park amenities in SVNIT Campus, Surat</a></td>
+    </tr>  -->
+<!-- 
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/SVNIT web Section Pillars.pdf">Tender for Replacement of Section (Feeder) Pillars at Various Location of SVNIT Campus, Surat</a> | <a href="../Data/Notice/2020/April/Corringedum Section Pilars 2nd.pdf">Corrigendum</td>
+    </tr>  -->
+
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/SVNIT web Shifting EPABX.pdf">Tender for Redressing / Shifting work of existing main Karel DS 200 EPABX system installed at administrative building to old electrical engineering department at SVNIT campus,Surat</a> | <!-- <a href="../Data/Notice/2020/March/Corringedum Shifting EPABX-converted.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/April/Corringedum Shifting EPABX 2nd.pdf">Corrigendum</a></td>
+    </tr> 
+ -->
+<!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/March/SVNIT web Flood Light.pdf">Tender for Supply and Installation of LED Floodlight for new Volleyball Ground at Student Activity Centre of SVNIT campus, Surat</a> | <!-- <a href="../Data/Notice/2020/March/Corringedum Flood Light-converted.pdf">Corrigendum</a> --><!-- <a href="../Data/Notice/2020/April/Corringedum Flood Light 2nd.pdf">Corrigendum</a></td>
+    </tr>   -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Form (1).pdf">Tender Document for Artist line up in Sparsh 2020 in Sardar Vallabhbhai National Institute of Technology, Surat </a> | <a href="../Data/Notice/2020/March/Corrigendum-Artist line up.pdf">Corrigendum</a> </td>
+    </tr>  -->
+ <!--    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Institute Website Notice-25.pdf ">Civil works Tender for Damaged Windows Replacement work, Flooring and Paver Block work at Old PT Lab of Applied Mechanics Department at SVNIT Campus, Surat </a> | <a href="../Data/Notice/2020/May/Corrigendum-T-25.pdf"> Corrigendum </a></td>
+    </tr> -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Institute Website Notice-26.pdf">Civil works Tender for  Repairing and Recarpeting of existing Campus Road in SVNIT, Surat. </a> \  <a href="../Data/Notice/2020/May/Corrigendum-T-26.pdf"> Corrigendum </a></td>
+    </tr> -->
+  <!--   <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Institute Website Notice-27.pdf">Civil works Tender for Repair and Restoration work of Civil Engineering Department and Applied Mechanics Department (South-East portion) at SVNIT Campus, Surat. </a> |  <a href="../Data/Notice/2020/May/Corrigendum-T-27.pdf"> Corrigendum </a></td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/18022020 Enquiry for Supply of Hot Air Oven at Applied Chemistry Department.pdf">enquiry for Supply of and Installation of Hot Air Oven at Applied Chemistry Department, SVNIT, Surat. </a></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/18022020 Enquiry for Vacuum Pump for Rotary Evaporator.pdf">enquiry for Supply and Installation of Vacuum Pump for Rotary Evaporator at Applied Chemistry
+Department, SVNIT, Surat. </a></td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/termination-kits.pdf">Enquiry for Supply and Installation of Termination Kits at SVNIT campus, Surat. </a></td>
+    </tr> -->
+  	<!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Su0syGtzelkD23fGPxJUJ1g%3D%3D">Tender for Supply of Thermal Properties Measurement System</a> | <a href="../Data/Notice/2020/February/SVNIT web -CCC- Copy_TPMS.pdf"> View PDF </a></td>
+    </tr> -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SaQnW71o%2BtuE0n63aY74pcQ%3D%3D">Tender for Supply of GNSS Receiver for Ionospheric Scintillation and Signal Refractometer and Simulator (Complete system installation and commissioning)</a> | <a href="../Data/Notice/2020/February/SVNIT web -CCC- Copy_GNSS.pdf"> View PDF </a></td>
+    </tr> -->
+ 
+ 
+       <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Institute Website Notice-21.pdf">Damaged P.V.C. Water Tank Replacement work at New CRC, I.C. Engine Lab., Cryogenics Lab., E-Type Staff Quarter and Sarabhai Bhavan at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/January/SVNIT web HT.pdf"> View PDF </a>| <a href="../Data/Notice/2020/February/Corrigendum Website Notice-21.pdf"> Corrigendum </a></td>
+    </tr> -->
+      <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/Institute Website Notice-22.pdf">Construction of R.C.C. Road at D-type Staff Quarter to Sewage Pumping Station Umra in SVNIT, Surat.</a> | <a href="../Data/Notice/2020/January/SVNIT web HT.pdf"> View PDF </a>| <a href="../Data/Notice/2020/February/Corrigendum Website Notice-22.pdf"> Corrigendum </a></td>
+    </tr> -->
+
+<!-- 
+         <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-16.pdf">Civil Work Tender for Construction of River Tray for experimentation of both PG and PhD Students in the Advance Hydraulic Lab at SVNIT, Surat.</a></td>
+    </tr>  --> 
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-17.pdf">Civil Work Tender for Water Proofing work on Terrace of Advance Hydraulics Lab at SVNIT Campus, Surat.</a></td>
+    </tr> 
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-18.pdf">Civil Work Tender for Fixing of Polycarbonate Sheet on Roof at Workshop in SVNIT Campus, Surat.</a></td>
+    </tr> 
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-19.pdf">Civil Work Tender for Roof Truss work for Equipment of DRDO Combustor Project in between of AFMFP Lab and P.G. Mechanical Building at SVNIT Campus, Surat.</a></td>
+    </tr>  -->
+       <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Electrical-Panel.pdf">Tender Document for Electrical panel work for laboratories in new building of Electrical Engineering Department SVNIT, Surat </a></td>
+    </tr>   -->
+
+          <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/320kva-dg.pdf">Enquiry for "Service and maintenance of 320 KVA DG sets at Guest house and 500 KVA DG sets at Substation – 5 of SVNIT</a> | <a href="../Data/Notice/2020/February/Extension of Date.pdf">Corrigendum</a> </td>
+    </tr>  -->  
+    <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SmF72MCGYhh07%2BqEisLluNw%3D%3D">Enquiry Tender for Annual Electrical Operation & Maintenance Contract for 22 KV HT substations includes maintenance of transformer, VCB, HT control panel, GOD switches 22 KV underground cable etc. at SVNIT, Surat.</a> | <a href="../Data/Notice/2020/January/SVNIT web HT.pdf"> View PDF </a>| <a href="../Data/Notice/2020/February/Corrigendum_HT_2.pdf"> Corrigendum </a></td>
+    </tr> -->
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SciRRPNzIFofn7acYXcrUgQ%3D%3D">Enquiry Tender for Annual Electrical Operation & Maintenance for Diesel Generator Set at SVNIT, Surat.</a> | <a href="../Data/Notice/2020/January/SVNIT web DG.pdf"> View PDF </a> | <a href="../Data/Notice/2020/February/Corrigendum_DG_2.pdf"> Corrigendum </a></td>
+    </tr> -->
+     <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Tender for Food Canteen19_20.pdf">Tender for Running Food Canteen at SVNIT, Surat </a> | <a href="../Data/Notice/2020/January/Cover-I.pdf"><font color="red">Cover I </font></a>  | <a href="../Data/Notice/2020/January/Cover-II.pdf"><font color="red"> Cover II </font></a> | <a href="../Data/Notice/2020/February/corrigendum-canteen.pdf">Corrigendum</a> </td>
+    </tr> -->
+    <!--    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/February/37 Re.Inquiry.pdf">Enquiry for providing AMC of Canon Copier Machines at SVNIT, Surat.</a></td>
+    </tr> -->
+<!-- 
+       <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S84mQewSgeAEP7p6w5K1t9Q%3D%3D">Enquiry for Deployment of SVNIT Mail Server to G-Suite (Google Cloud)</a> | <a href="../Data/Notice/2020/February/Enquiry_G_Suite.pdf"> View PDF </a> | <a href="../Data/Notice/2020/January/G-suite-Corrigendum.pdf"><font color="red"> Corrigendum</a  </font></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Enquiry_for_supply_of_Pump_Motor_at_SVNIT_Surat.pdf">Enquiry for Supply of Pump Motor at SVNIT, Surat </a></td>
+    </tr>   --> 
+    <!--       <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/SVNIT_WEB_AC_AMC_ Jan2020.pdf">Comprehensive annual maintenance contract for split / window / cassette air-conditioners at SVNIT campus, Surat</a></td>
+    </tr>
+    <tr> -->
+
+<!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-11.pdf">Tender for Replacement of Drainage Line of B-Type Quarter at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/February/corrigendum-l1.pdf">Corrigendum</a></td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Institute Website Notice-12.pdf">Tender for Internal Colour work in All B-type Quarters at SVNIT, Surat.</a> | <a href="../Data/Notice/2020/February/corrigendum-l2.pdf">Corrigendum</a> </td>
+    </tr> -->
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/25E17012020.pdf">Enquiry Tender for Window Curtain Work at Advance Manufacturing Laboratory and Advance Fluid Mechanics and Fluid Power Laboratory, SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum24E-25E-2.jpg">Corrigendum</a></td>
+    </tr> -->
+
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/24E317012020.pdf">Enquiry Tender for Various Plumbing Work in Gajjar Bhavan at SVNIT, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum24E-25E-2.jpg">Corrigendum</a></td>
+    </tr> -->
+
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/24E117012020.pdf">Enquiry Tender for Repairing Work in S.V.P. Bhavan (New Guest House) at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum24E-25E-2.jpg">Corrigendum</a></td>
+    </tr> -->
+
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Enquiry_special-designed-multitapping-inductors.pdf">Enquiry for special designed multi tapping  inductors at Electrical Engineering Department, SVNIT , Surat.</a> </td>
+    </tr> -->
+    <!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/SVNIT web - Copy.pdf">Tender Notice for Supply of Thermal Properties Measurement System at SVNIT , Surat.</a> </td>
+    </tr> -->
+  <!--   <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/SVNIT web - Copy (1).pdf">Tender Notice for Supply of GNSS Receiver for Ionospheric Scintillation And Signal Refractoctometer and Simulator (Complete system installation & Commissioning) “ at SVNIT , Surat, Gujarat.</a> </td>
+    </tr> -->
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/Enquiry for Australian carpet lawn   near ADM.pdf">Enquiry for Purchase of Australian Carpet Lawn for Plantation near Administration Building and road divider at SVNIT, Surat </a> </td>
+    </tr> -->
+
+ 
+
+  	<!-- <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/amc_toshiba-copier.pdf">Annual  Maintenance Contract for Toshiba Copier Machines in SVNIT </a> | <a href="../Data/Notice/2020/January/Corrigendam_(SVNIT_website).pdf">Corrigendum </a></td>
+    </tr> -->
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://eprocure.gov.in/epublish/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwdHypLKU4bAxVCSetFYZVQ%3D%3D">Enquiry Tender for Annual Electrical Operation & Maintenance Contract at SVNIT, Surat.</a> | <a href="../Data/Notice/2020/January/SVNIT web LT.pdf"> View PDF </a> | <a href="../Data/Notice/2020/January/Corrigendum_of_date_of_LT.pdf"> Corrigendum </a></td>
+    </tr> -->
+   
+
+  <!-- 	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2020/January/26E02012020.pdf">Enquiry Tender for Pest Control work at Ground and First Floor of Mechanical Engineering Department at SVNIT Campus, Surat.</a></td>
+    </tr>
+ --><!-- 
+  		<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/December/37 Inquiry.pdf">Enquiry for providing AMC of Canon Copier Machines at SVNIT, Surat.</a></td>
+    </tr> -->
+
+<!-- 
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/December/107T112122019.pdf">Civil Work Tender for P.V.C. Water Tank Replacement work at New Computer, New Electrical, Applied Maths., Old Civil Engg. Department, Raman Bhavan, Tagore Bhavan, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum107T.jpg">Corrigendum</a></td>
+    </tr> -->
+   
+   <!--  <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/November/106T128112019.pdf">Civil Works Tender for Polymer Plaster and Flooring work in B-Type Quarters at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum106T.jpg">Corrigendum</a></td>
+    </tr> -->
+  <!--   <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/November/106T228112019.pdf">Civil Works Tender for Floor Tiles Repairing work of New CRC at SVNIT Campus, Surat.</a> | <a href="../Data/Notice/2020/January/Corrigendum106T.jpg">Corrigendum</a></td>
+    </tr> -->
+   
+
+  	 
+
+
+</table>
+</div>
+</div>
+        </marquee>
+         
+          
+          <a href="web/notice_events_tenders.php?tag=tenders" class="right">read more...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal for cards -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center"><h4 class="light-green-text text-darken-3">SVNIT Events</h4></li>
+                  </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      </div>
+      </div>
+
+<!-- 2nd modal -->
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center"><h4 class=" light-green-text text-darken-3">Student Chapters</h4></li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle green">android</i>
+          <div class="title"><h5 class="blue-text text-darken-2">ACM</h5></div>
+          <a href="http://nitsurat.acm.org/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle orange">track_changes</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">Cutting Edge Visionaries (CEV)</h5></div>
+          <a href="https://www.cevgroup.org/cev-talks/2018-2019/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">group_work</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">Drishti</h5></div>  
+          <a href="http://www.svnit.ac.in/stu_chap/drishti/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle yellow">settings_input_composite</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">ISF</h5></div>  
+          <a href="http://www.svnit.ac.in/stu_chap/ISF/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle  brown">invert_colors</i>
+          <div class="title" ><h5 class="blue-text text-darken-2"></h5></div>
+          <p>Chemical Department</p>
+          <a href="http://www.ches.in/" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">business</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">CES</h5></div> 
+          <a href="" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle orange">track_changes</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">SCOSH</h5></div>
+          <a href="http://www.svnit.ac.in/stu_chap/SCOSH/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+<!-- 3rd modal-->
+  <div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center" style="background-color: rgb(56,75,123);"><h3 class=" light-green-text text-darken-3">TEQIP</h3></li>
+        <li class="collection-header text-center"><a href="web/teqip.php"><h4 class=" light-green-text text-darken-3">TEQIP 1</h4></a></li>
+        <li class="collection-header text-center"><a href="web/teqip2.php"><h4 class=" light-green-text text-darken-3">TEQIP 2</h4></a></li>  
+        <li class="collection-header text-center"><a href="web/teqip3.php"><h4 class=" light-green-text text-darken-3">TEQIP 3</h4></a></li> 
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+<!-- card -->
+  <div  style="margin-left: 5%; margin-right: 5%;" class="section card-panel white">
+    <div class="row center-align">
+     
+      <div class="col s12 m4 l2">   
+        <a href="http://www.sparshsvnit.org">
+          <div class="card hoverable" style="height: 190px;width: 190px;">
+            <div class="card-image crdtop">
+              <img src="images/event-fests.jpg" alt="events" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Sparsh 2020</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="#modal2">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/student_chapter.webp" alt="student_chapter" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Chapters</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m4 l2" >
+        <a href="http://www.svnit.ac.in/web/covid19.php" target="_blank">
+          <div class="card hoverable " style="height: 190px;width: 190px;">
+            <div class="card-image crdtop">
+              <img src="images/corona1.webp" alt="library" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">COVID - 19</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2" >
+        <a href="web/vigilance.php" target="_blank">
+          <div class="card hoverable " style="height: 190px;width: 190px;">
+            <div class="card-image crdtop">
+              <img src="images/Vigilance Section.jpg" alt="Vigilance Section" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Vigilance Section</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/placement.php" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/tnp.webp" alt="TNP" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">TnP</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/qip.php">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/teqip.webp" alt="TEQIP" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">QIP</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/achievements.php" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/alum.webp" alt="alumani" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Glory</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m4 l2">
+        <a href="Unnat_Bharat/" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/logo_UBA.webp" alt="UBA" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Unnat Bharat Abhiyan</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m4 l2">
+        <a href="http://hindicellsvnit.in/" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/hindi-cell.webp" alt="UBA" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">HINDI CELL</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sardar Vallabhbhai National Institute of Technology, Surat</h5>
+          <p class="grey-text text-lighten-4">The Sardar Vallabhbhai National Institute of Technology, Surat popularly known as National Institute of Technology, Surat, NIT Surat or SVNIT, is an engineering institute of higher education established by the Parliament of India in 1961.</p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/>
+          </a>
+          <a href="https://www.facebook.com/Mediacell_SVNIT-2056411067945837/"<i class="fa fa-facebook-official fa-2x" style="color: #3b5998 !important" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/Media_SVNIT"<i class="fa fa-twitter fa-2x" style="color: #0084b4 !important" aria-hidden="true"></i></a>
+   
+      
+        </div>          <h5 class="white-text">Information</h5>
+          <ul>
+            <li><a class="white-text" href="Data/Notice/rti/rti.pdf">Right to Information</a></li>
+            <li><a class="white-text" href="Data/Notice/2020/April/post-benchmark-disabilities.pdf">Post Identified for Person with Benchmark Disabilities</a></li>
+            <li><a class="white-text" href="web/brief_writeup.php">About</a></li>
+            <li><a class="white-text" href="web/contactus.php">Contact Us</a></li>
+            <li><a class="white-text" href="#modal6">Helpline</a></li>
+            <li><a class="white-text" href="Data/IT_POLICY_2014.pdf">IT policy</a></li>
+            <li><a class="white-text" href="Data/Notice/2018/Disclaimer_SVNIT.pdf">Disclaimer</a></li>
+            <li><a class="white-text" href="web/sitemap.php">Site Map</a></li>
+            
+          </ul>
+        </div>
+
+        <div id="modal6" class="modal bottom-sheet">
+          <div class="modal-content">
+            <ul class="collection with-header">
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinefirstyear[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinehostels[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinelady[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">icc[at]svnit[dot]ac[dot]in</h5></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          </div>
+        </div>
+            
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://goo.gl/forms/Gb3yPxdF0aKGILbg1">Feedback</a></li>
+            <li><a class="white-text" href="web/minutes.php?tag=bog">Minutes</a></li>
+            <li><a class="white-text" href="#modal4">Donation</a></li>
+            <div id="modal4" class="modal bottom-sheet">
+              <div class="modal-content">
+                <ul class="collection with-header">
+                  <li class="collection-header text-center"><a href="Data/Terms For Setting UG Scholarhip SVNIT-jan2016.pdf"><h5 class=" light-green-text text-darken-3">TERMS FOR SETTING OF UNDERGRADUATE SCHOLARSHIP</h5></a></li>
+                  <li class="collection-header text-center"><a href="Data/Donation Form SVNIT_jan2016.pdf"><h5 class=" light-green-text text-darken-3">Donation Form</h5></a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+              </div>
+            </div>
+            <li><a class="white-text" href="#modal5">Other Info</a></li>
+              <div id="modal5" class="modal bottom-sheet">
+                <div class="modal-content">
+                  <ul class="collection with-header">
+                    <li class="collection-header text-center"><a href="Data/KAKODKAR_COMMITTEE_REPORT-for-NITs.pdf"><h5 class=" light-green-text text-darken-3">KAKODKAR COMMITTEE REPORT for NITs</h5></a></li>
+                    <li class="collection-header text-center"><a href="Data/Kakodkar-committee-report-on-NITs-presentation.pdf"><h5 class=" light-green-text text-darken-3">Kakodkar Committee Report on NITs Presentation</h5></a></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                </div>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+     
+    <div class="footer-copyright">
+      <div class="container">Developed by 
+      <a class="brown-text text-lighten-3" href="web/webteam.php">Web team</a>   
+      <a class="white-text right">Best viewed in Google Chrome Version 59.0.3071.115</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.newsTicker.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/md5.js" ></script>
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+      //alert('Before load');
+      $(".se-pre-con").fadeOut("slow");
+      });
+    
+      $(document).ready(function(){
+        $('.modal').modal();
+        $('.slider').slider();
+      });
+
+      var nt_1 = $('#nt-1').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-1-prev'),
+        nextButton: $('#nt-1-next')
+      });
+
+      var nt_2 = $('#nt-2').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-2-prev'),
+        nextButton: $('#nt-2-next')
+      });
+
+      var nt_3 = $('#nt-3').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-3-prev'),
+        nextButton: $('#nt-3-next')
+      });
+
+      $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(function(){
+        jQuery('#ticker').tickerme();
+      });
+  
+  // js code for news ticker
+  (function(e){e.fn.tickerme=function(t){var n=e.extend({},e.fn.tickerme.defaults,t);return this.each(function(){function a(){e(t).hide();e("body").prepend(r).prepend(i);var n='<div id="ticker_container">';n+='<div id="newscontent"><div id="news"></div></div>';n+='<div id="controls">';n+='<a href="#" id="pause_trigger"><svg class="icon icon-pause" viewBox="0 0 32 32"><use xlink:href="#icon-pause"></use></svg></a>';n+='<a href="#" id="play_trigger" style="display:none"><svg class="icon icon-play" viewBox="0 0 32 32"><use xlink:href="#icon-play"></use></svg></a>';n+='<a href="#" id="prev_trigger"><svg class="icon icon-prev" viewBox="0 0 32 32"><use xlink:href="#icon-prev"></use></svg></a>';n+='<a href="#" id="next_trigger"><svg class="icon icon-next" viewBox="0 0 32 32"><use xlink:href="#icon-next"></use></svg></a>';n+="</div>";n+="</div>";e(n).insertAfter(t);e(t).children().each(function(t){s[t]=e(this).html()});f()}function f(){if(o==s.length-1){o=0}else{o++}if(n.type=="fade"){e("#news").fadeOut(n.fade_speed,function(){e("#newscontent").html('<div id="news">'+s[o]+"</div>");e("#news").fadeIn(n.fade_speed)})}u=setTimeout(f,n.duration)}var t=e(this);var r='<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="224" height="32" viewBox="0 0 224 32"><defs><g id="icon-play"><path class="path1" d="M6 4l20 12-20 12z"></path></g><g id="icon-pause"><path class="path1" d="M4 4h10v24h-10zM18 4h10v24h-10z"></path></g><g id="icon-prev"><path class="path1" d="M18 5v10l10-10v22l-10-10v10l-11-11z"></path></g><g id="icon-next"><path class="path1" d="M16 27v-10l-10 10v-22l10 10v-10l11 11z"></path></g></defs></svg>';var i='<style type="text/css">#ticker_container{width:100%}#newscontent{float:left}#news{display:none}#controls{float:right;height:16px}.icon{display:inline-block;width:16px;height:16px;fill:'+n.control_colour+"}.icon:hover{fill:"+n.control_rollover+"}</style>";var s=[];var o=-1;var u;a();e("a#pause_trigger").click(function(){clearTimeout(u);e(this).hide();e("#play_trigger").show();return false});e("a#play_trigger").click(function(){f();e(this).hide();e("#pause_trigger").show();return false});e("a#prev_trigger").click(function(){if(o==0){o=s.length-1}else{o--}e("#newscontent").html('<div id="news" style="display:block">'+s[o]+"</div>");if(n.auto_stop)e("a#pause_trigger").trigger("click");return false});e("a#next_trigger").click(function(){if(o==s.length-1){o=0}else{o++}e("#newscontent").html('<div id="news" style="display:block">'+s[o]+"</div>");if(n.auto_stop)e("a#pause_trigger").trigger("click");return false})})};e.fn.tickerme.defaults={fade_speed:500,duration:3e3,auto_stop:true,type:"fade",control_colour:"#333333",control_rollover:"#666666"}})(jQuery)
+    </script>
+<!--  ###Ramesh SSL -->
+ <script type="text/javascript"> //<![CDATA[
+  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script language="JavaScript" type="text/javascript">
+  TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png", "POSDV", "none");
+</script>
+  
+ 
+</body>
+</html>

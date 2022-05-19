@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idDb"
+        android:text="id"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTv"
+        android:text="Name"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneTv"
+        android:text="Phone"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTv"
+        android:text="Email"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTv"
+        android:text="Address"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"/>
+
+</LinearLayout>

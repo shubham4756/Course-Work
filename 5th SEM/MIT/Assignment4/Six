@@ -1,0 +1,9 @@
+mvi b,042H
+mvi c,069H
+mov a,b
+sub c
+jnc display  ;if ans -ve then it will produce carry
+cma          ;for getting magnitude one's complement
+inr a        ; two 's complement
+display: out 01H
+hlt

@@ -1,0 +1,1 @@
+this program will do affine cipher it does encrypt and decrypt as based on modular arithmetic

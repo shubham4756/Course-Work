@@ -1,0 +1,30 @@
+lxi h,5000H
+mov e,m
+call squareroot
+lxi h,5050H
+mov m,d
+lxi h,5001H
+mov e,m
+call squareroot
+lxi h,5051H
+mov m,d
+hlt
+
+; square sub routine which is used by square root also
+square: mov c,b
+	mvi a,00H
+  loop: add b
+	dcr c
+	jnz loop
+	ret
+
+; it find floor value of sqare root
+squareroot: mvi d,00H
+     loop2: inr d
+	    mov b,d
+	    call square ; to check whether d*d <= e
+	    cmp e
+	    jc loop2 ; if less then go for next value
+	    jz exit ;if d*d == e found
+	    dcr d ; id d*d > e then d - 1
+	    exit: ret

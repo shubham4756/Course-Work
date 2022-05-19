@@ -1,0 +1,28 @@
+; for finding factorial
+lxi h,4000H
+mov b,m
+call factorial ; calling first time
+inx h
+mov m,d ; store ans
+inx h
+mov b,m
+call factorial ; calling second time
+inx h
+mov m,d
+hlt
+
+;after completion of this register d contains answer
+factorial: mvi d,01H
+	next: call multiply
+	dcr b
+	jnz next
+	ret
+
+;Helper subroutine
+multiply: mov c,b
+	  mvi a,00H  
+    loop: add d    ;loop find n*(n-1) by adding n : n-1 times
+	  dcr c
+	  jnz loop
+	  mov d,a
+	  ret

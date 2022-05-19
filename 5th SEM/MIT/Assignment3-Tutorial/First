@@ -1,0 +1,14 @@
+mvi a,3Ah
+sta 3000h
+lxi h,3000h ; load data into memory from address 3000H
+mov a ,m ; move in to the accumulator
+lxi h,3002h ;where we want store the ans
+ani 08h ; and with 2^3 as we want to check fourth bit
+jnz noz ; if zero flag value is 0 which means 1
+
+; else set 00
+
+mvi m,00H
+jmp end
+noz: mvi m,FFH
+end: hlt

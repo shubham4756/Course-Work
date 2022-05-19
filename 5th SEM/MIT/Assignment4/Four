@@ -1,0 +1,10 @@
+xra a ;clear the cy flag
+mvi b,0FFH
+inr b ;it doesn't affect CY flag
+jnc show ;if carry then show 01H
+mov a,B
+out 01H
+jmp end
+show: mov a,b
+out 01H
+end: hlt

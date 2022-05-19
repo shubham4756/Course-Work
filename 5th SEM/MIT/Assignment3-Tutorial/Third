@@ -1,0 +1,12 @@
+lxi h,07D0H
+mvi c ,00H
+mov d, m ;d register contains counter
+next: inx h
+mov a,m
+cpi 09H ;compare with 09
+jnc skip ;if greater
+inr c ;if smaller then increment ans
+skip: dcr d
+jnz next
+mov a,c ;store result into the accumulator
+hlt

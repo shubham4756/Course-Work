@@ -1,0 +1,7 @@
+Calculate the CPU load for your machine and identify the state
+(under loaded or overloaded) of your machine. You have to find
+out the CPU usage of your computer using some Unix command.
+Hint: With the help of grep Unix command, you can extract CPU
+usage. If CPU load is greater than 70% than it is overloaded, if it is
+between the range of 30% to 70% than it is moderately loaded
+and if it is less than 30% than it is lightly-loaded

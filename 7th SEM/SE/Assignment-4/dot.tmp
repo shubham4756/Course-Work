@@ -1,0 +1,21 @@
+digraph p_fac {
+size="8,10";
+  GT [shape=box,style=dotted,label="fac"];
+  GT -> S6;
+	S6 -> S2  [color=black,style=solid,label="((n==1))"];
+	S6 -> S4  [color=black,style=solid,label="((n>1))"];
+	S2 -> S8  [color=black,style=bold,label="printf('ans is %d ',res)"];
+	S8 -> S0  [color=black,style=solid,label="-end-"];
+  S8 [color=blue,style=bold,shape=box];
+	S4 -> S5  [color=black,style=bold,label="res = (res*n)"];
+	S5 -> S8  [color=black,style=solid,label="(run fac((n-1)))"];
+}
+digraph init {
+size="8,10";
+  GT [shape=box,style=dotted,label="init"];
+  GT -> S1;
+	S1 -> S2  [color=black,style=solid,label="printf('factorial of 5 is ')"];
+	S2 -> S3  [color=black,style=solid,label="(run fac(5))"];
+	S3 -> S0  [color=black,style=solid,label="-end-"];
+  S3 [color=blue,style=bold,shape=box];
+}
